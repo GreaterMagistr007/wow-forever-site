@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Если что-то сломалось — WoW под Linux — WoW Forever</title>
+<meta name="description" content="Оффлайн-база знаний и гайды по WoW Forever: прокачка, профессии, золото, аддоны, игра под Linux.">
+<meta name="theme-color" content="#16120c">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="index.html">WoW Forever</a>
+  <button class="menu" type="button" aria-expanded="false" aria-controls="nav">Меню</button>
+  <div class="search">
+    <input id="q" type="search" placeholder="Поиск: маунт, травничество, Legacy…" autocomplete="off" aria-label="Поиск по базе знаний и гайдам">
+    <div id="results" role="listbox" hidden></div>
+  </div>
+</header>
+<div class="layout">
+<nav id="nav" aria-label="Разделы"><a href="index.html">Главная</a><div class="nh">Гайды</div><a href="guide-first-hour.html">Первый час: с чего начать</a><a href="guide-leveling-route.html">Маршрут прокачки 1–60</a><a href="guide-first-gold.html">Деньги на прокачке и маунт к 40</a><a href="guide-professions.html">Профессии: от выбора до 300</a><a href="guide-auctionator.html">Торговля на аукционе с Auctionator</a><a href="guide-level-60.html">Что делать на 60</a><div class="nh">База знаний</div><a href="start.html">С чего начать</a><a href="leveling.html">Прокачка 1–60</a><a href="routes.html">Маршруты прокачки</a><a href="professions.html">Профессии</a><a href="gold.html">Золото и аукцион</a><a href="travel.html">Передвижение и маунты</a><a href="dungeons.html">Подземелья, рейды и группы</a><a href="addons.html">Аддоны</a><a href="linux.html" class="on" aria-current="page">WoW под Linux</a><a href="payment.html">Подписка и оплата</a></nav>
+<main>
+<p class="crumbs"><a href="index.html">Главная</a> › <a href="linux.html">WoW под Linux</a></p><h1>Если что-то сломалось</h1><details class="toc" open><summary>На странице</summary><ol><li><a href="#установка-forever-зависла-или-падает-с-ошибкой-5016">Установка Forever зависла или падает с ошибкой 5016</a></li><li><a href="#battlenet-или-игра-не-запускаются">Battle.net или игра не запускаются</a></li><li><a href="#ошибки-сети-connect-failed-10051">Ошибки сети connect failed: 10051</a></li><li><a href="#полная-пересборка-префикса">Полная пересборка префикса</a></li></ol></details><article><h3 id="установка-forever-зависла-или-падает-с-ошибкой-5016">Установка Forever зависла или падает с ошибкой 5016</h3>
+<ul>
+<li>Форма установки висит: CDN Blizzard отвечает медленно (<code>CurlError 28</code>, <code>CurlError 35</code>); замедлять может VPN или прокси. Помогает закрыть окно и нажать «Установить» снова. Если зависает снова — перезапустить Battle.net, временно отключить VPN или исключить из него Battle.net.</li>
+<li>Ошибка 5016, в логах Agent <code>CascLocked</code> и <code>container locked</code>: Agent держал общий архив данных после первой неудачной попытки. Помогло полностью выйти из Battle.net через меню (не крестиком) и запустить заново.</li>
+<li>Логи Agent: <code>battlenet-prefix/drive_c/ProgramData/Battle.net/Agent/Agent.*/Logs/</code>.</li>
+<li>Если блокировка повторится после чистого перезапуска — ставить Forever в отдельную папку, например <code>C:\WoW\Forever</code>. Займёт 48 ГБ.</li>
+</ul>
+<h3 id="battlenet-или-игра-не-запускаются">Battle.net или игра не запускаются</h3>
+<ul>
+<li>Проверить, что префикс и <code>Wow.exe</code> на месте, а ссылка на папку с играми внутри префикса цела.</li>
+<li>Добить зависшие процессы <code>Battle.net.exe</code> и <code>Wow.exe</code>, затем <code>wineserver -k</code> для этого префикса.</li>
+</ul>
+<h3 id="ошибки-сети-connect-failed-10051">Ошибки сети <code>connect failed: 10051</code></h3>
+<p>Это недоступность сети или попытки IPv6 без маршрута. Проверить <code>curl -I https://www.battle.net</code>. Если сеть живая — это фоновый шум.</p>
+<h3 id="полная-пересборка-префикса">Полная пересборка префикса</h3>
+<p>Игры перекачивать не нужно, если они лежат вне префикса: после переустановки Battle.net указать установку в ту же папку (например, <code>C:\WoW</code>), он найдёт файлы.</p></article><nav class="pager"><a class="prev" href="linux-04.html">← Настройки</a><a class="next" href="linux-06.html">Античит →</a></nav>
+</main>
+</div>
+<script src="search-index.js" defer></script>
+<script src="app.js" defer></script>
+</body>
+</html>

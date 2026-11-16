@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Как устроено — Аддоны — WoW Forever</title>
+<meta name="description" content="Оффлайн-база знаний и гайды по WoW Forever: прокачка, профессии, золото, аддоны, игра под Linux.">
+<meta name="theme-color" content="#16120c">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="index.html">WoW Forever</a>
+  <button class="menu" type="button" aria-expanded="false" aria-controls="nav">Меню</button>
+  <div class="search">
+    <input id="q" type="search" placeholder="Поиск: маунт, травничество, Legacy…" autocomplete="off" aria-label="Поиск по базе знаний и гайдам">
+    <div id="results" role="listbox" hidden></div>
+  </div>
+</header>
+<div class="layout">
+<nav id="nav" aria-label="Разделы"><a href="index.html">Главная</a><div class="nh">Гайды</div><a href="guide-first-hour.html">Первый час: с чего начать</a><a href="guide-leveling-route.html">Маршрут прокачки 1–60</a><a href="guide-first-gold.html">Деньги на прокачке и маунт к 40</a><a href="guide-professions.html">Профессии: от выбора до 300</a><a href="guide-auctionator.html">Торговля на аукционе с Auctionator</a><a href="guide-level-60.html">Что делать на 60</a><div class="nh">База знаний</div><a href="start.html">С чего начать</a><a href="leveling.html">Прокачка 1–60</a><a href="routes.html">Маршруты прокачки</a><a href="professions.html">Профессии</a><a href="gold.html">Золото и аукцион</a><a href="travel.html">Передвижение и маунты</a><a href="dungeons.html">Подземелья, рейды и группы</a><a href="addons.html" class="on" aria-current="page">Аддоны</a><a href="linux.html">WoW под Linux</a><a href="payment.html">Подписка и оплата</a></nav>
+<main>
+<p class="crumbs"><a href="index.html">Главная</a> › <a href="addons.html">Аддоны</a></p><h1>Как устроено</h1><article><ul>
+<li>Клиент Forever 1.60.1.70938, версия интерфейса <code>16001</code>. Аддоны лежат в папке клиента: <code>World of Warcraft/_forever_/Interface/AddOns</code>. <span class="b b-ok" title="Подтверждено для WoW Forever">Forever</span></li>
+<li>Подходит только аддон, у которого в <code>.toc</code> есть <code>## Interface:</code> со значением <code>16001</code>. Некоторые аддоны кладут под Forever отдельный файл (<code>Questie_Forever.toc</code>). <span class="b b-ok" title="Подтверждено для WoW Forever">Forever</span></li>
+<li>Папки аддонов из Classic копировать нельзя: Forever работает на клиенте Retail. Берите файлы, отмеченные Forever. <span class="b b-ok" title="Подтверждено для WoW Forever">Forever</span></li>
+<li>Новые аддоны подхватываются только после полного перезапуска игры: <code>/reload</code> их не видит. <span class="b b-ok" title="Подтверждено для WoW Forever">Forever</span></li>
+<li>Включаются на экране выбора персонажа: «Модификации», левый нижний угол. Если аддон помечен «Устаревший», отметьте «Загружать устаревшие модификации». <span class="b b-ok" title="Подтверждено для WoW Forever">Forever</span></li>
+</ul></article><nav class="pager"><span></span><a class="next" href="addons-02.html">Как поставить новый аддон →</a></nav>
+</main>
+</div>
+<script src="search-index.js" defer></script>
+<script src="app.js" defer></script>
+</body>
+</html>

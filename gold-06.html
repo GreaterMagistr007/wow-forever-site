@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Auctionator и другие аддоны для золота — Золото и аукцион — WoW Forever</title>
+<meta name="description" content="Оффлайн-база знаний и гайды по WoW Forever: прокачка, профессии, золото, аддоны, игра под Linux.">
+<meta name="theme-color" content="#16120c">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="index.html">WoW Forever</a>
+  <button class="menu" type="button" aria-expanded="false" aria-controls="nav">Меню</button>
+  <div class="search">
+    <input id="q" type="search" placeholder="Поиск: маунт, травничество, Legacy…" autocomplete="off" aria-label="Поиск по базе знаний и гайдам">
+    <div id="results" role="listbox" hidden></div>
+  </div>
+</header>
+<div class="layout">
+<nav id="nav" aria-label="Разделы"><a href="index.html">Главная</a><div class="nh">Гайды</div><a href="guide-first-hour.html">Первый час: с чего начать</a><a href="guide-leveling-route.html">Маршрут прокачки 1–60</a><a href="guide-first-gold.html">Деньги на прокачке и маунт к 40</a><a href="guide-professions.html">Профессии: от выбора до 300</a><a href="guide-auctionator.html">Торговля на аукционе с Auctionator</a><a href="guide-level-60.html">Что делать на 60</a><div class="nh">База знаний</div><a href="start.html">С чего начать</a><a href="leveling.html">Прокачка 1–60</a><a href="routes.html">Маршруты прокачки</a><a href="professions.html">Профессии</a><a href="gold.html" class="on" aria-current="page">Золото и аукцион</a><a href="travel.html">Передвижение и маунты</a><a href="dungeons.html">Подземелья, рейды и группы</a><a href="addons.html">Аддоны</a><a href="linux.html">WoW под Linux</a><a href="payment.html">Подписка и оплата</a></nav>
+<main>
+<p class="crumbs"><a href="index.html">Главная</a> › <a href="gold.html">Золото и аукцион</a></p><h1>Auctionator и другие аддоны для золота</h1><details class="toc" open><summary>На странице</summary><ol><li><a href="#auctionator-подготовка">Auctionator: подготовка</a></li><li><a href="#вкладки-и-подсказки">Вкладки и подсказки</a></li><li><a href="#перепродажа-флиппинг">Перепродажа (флиппинг)</a></li><li><a href="#другие-аддоны-с-forever-версией">Другие аддоны с Forever-версией</a></li></ol></details><article><h3 id="auctionator-подготовка">Auctionator: подготовка</h3>
+<ul>
+<li>Версия под Forever есть, лежит на Wago. Номер сборки у сайтов разный: 341 (13.10), 343 (08.11) или 344 (09.11) — обновить до свежей. <span class="b b-bad" title="Источники противоречат друг другу">спорно</span> (<a href="https://wowforeveraddons.com/addons/auctionator" target="_blank" rel="noopener noreferrer">wowforeveraddons.com</a>)</li>
+<li>Историю цен Auctionator собирает только из твоих собственных сканов, а экономика Forever стартовала с нуля 04.11. Первые дни подсказки цен неточные — сканировать при каждом визите на аукцион. <span class="b b-ok" title="Подтверждено для WoW Forever">Forever</span> <span class="b b-mute" title="Источник не указан">без источника</span></li>
+</ul>
+<h3 id="вкладки-и-подсказки">Вкладки и подсказки</h3>
+<p>Функции общие для версий Auctionator, в Forever-сборке отдельно не проверены. (<a href="https://warcrafttavern.com/wow/guides/auctionator-addon-guide" target="_blank" rel="noopener noreferrer">warcrafttavern.com</a>, <a href="https://www.github.com/Auctionator/Auctionator" target="_blank" rel="noopener noreferrer">github.com</a>)
+- Shopping — сохранённые списки покупок («Ткань», «Руда 40–60», «Эссенции»): один клик показывает текущие минимальные цены по всему списку; списки экспортируются строкой. <span class="b b-warn" title="Из гайдов по Classic, для Forever не подтверждено">Classic</span>
+- Selling — выставление в один клик с автоматическим подрезанием (undercut) минимальной цены. <span class="b b-warn" title="Из гайдов по Classic, для Forever не подтверждено">Classic</span>
+- Cancelling — скан «подрезали ли мои лоты» и снятие подрезанных в один клик. Депозит при отмене сгорает. <span class="b b-warn" title="Из гайдов по Classic, для Forever не подтверждено">Classic</span>
+- Подсказка предмета показывает цену аукциона, цену вендора и (если включено) цену распыления — главный ответ на вопрос «вендору или на аукцион». <span class="b b-warn" title="Из гайдов по Classic, для Forever не подтверждено">Classic</span></p>
+<h3 id="перепродажа-флиппинг">Перепродажа (флиппинг)</h3>
+<ol>
+<li>Список в Shopping из 10–20 ходовых товаров своего уровня (ткань, кожа, руда/слитки, травы, эссенции, пыль).</li>
+<li>Несколько дней сканировать, чтобы набралась своя история цен.</li>
+<li>Покупать только лоты заметно ниже обычной цены, с запасом на комиссию и депозит; выставлять по обычной.</li>
+<li>Не скупать «стену» товара, который дешевеет всю неделю (Runecloth, Thorium, Felcloth): на падающем рынке флиппинг сырья убыточен.
+- Риск на мегасервере: продавцов тысячи, подрезают за минуты, на дешёвых товарах выигрыш съедает депозит. Флиппинг имеет смысл на 60 и с запасом золота, а не во время прокачки. <span class="b b-mute" title="Источник не указан">без источника</span></li>
+</ol>
+<h3 id="другие-аддоны-с-forever-версией">Другие аддоны с Forever-версией</h3>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Аддон</th>
+<th>Зачем для денег</th>
+<th>Статус под Forever</th>
+<th>Источник</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GatherMate2</td>
+<td>запоминает точки руды и трав на карте</td>
+<td>1.52.4 от 03.11 (TOC 16001); по другим сайтам — альфа от 22.10 или 1.52.5 от 06.11 <span class="b b-bad" title="Источники противоречат друг другу">спорно</span>; баг: в стартовых «микро-зонах» точки не пишутся</td>
+<td><a href="https://wofwforever.com/en/guides/wow-forever-addon-compatibility/" target="_blank" rel="noopener noreferrer">wofwforever.com</a>, <a href="https://wowforeveraddons.com/addons/gathermate2" target="_blank" rel="noopener noreferrer">wowforeveraddons.com</a>, <a href="https://www.wowace.com/projects/gathermate2" target="_blank" rel="noopener noreferrer">wowace.com</a></td>
+</tr>
+<tr>
+<td>Baganator (нужен Syndicator)</td>
+<td>сумки и поиск предметов по всем персонажам и банкам — удобно, если ремесленник альт</td>
+<td>сборки конца октября – начала ноября</td>
+<td><a href="https://wowforeveraddons.com/addons/baganator" target="_blank" rel="noopener noreferrer">wowforeveraddons.com</a></td>
+</tr>
+<tr>
+<td>Altoholic</td>
+<td>рецепты и сумки всех альтов</td>
+<td>v1.60.005 от 14.10</td>
+<td><a href="https://forevermastery.com/en/addons/forever-compatibility" target="_blank" rel="noopener noreferrer">forevermastery.com</a></td>
+</tr>
+<tr>
+<td>Profession Planner</td>
+<td>самый дешёвый маршрут прокачки профессии по ценам Auctionator; ~102,5 тыс. загрузок</td>
+<td>обновлён в ноябре 2026</td>
+<td><a href="https://www.curseforge.com/wow/addons/profplanner" target="_blank" rel="noopener noreferrer">curseforge.com</a></td>
+</tr>
+<tr>
+<td>Forever Profession Capper</td>
+<td>«что крафтить следующим» по ценам Auctionator</td>
+<td>Interface 16001</td>
+<td><a href="https://www.curseforge.com/wow/addons/forever-profession-capper" target="_blank" rel="noopener noreferrer">curseforge.com</a></td>
+</tr>
+<tr>
+<td>Profession Cooldown Tracker Forever</td>
+<td>следит за кулдаунами трансмутов, соли и т.п.</td>
+<td>есть</td>
+<td><a href="https://www.curseforge.com/wow/addons/profession-cooldown-tracker-forever" target="_blank" rel="noopener noreferrer">curseforge.com</a></td>
+</tr>
+<tr>
+<td>LootAppraiser Reloaded</td>
+<td>оценка стоимости добычи</td>
+<td>есть (оригинальный LootAppraiser — нет, на 09.11)</td>
+<td><a href="https://timesaver.gg/blog/wow-forever-addons-save-beta-ui-before-launch" target="_blank" rel="noopener noreferrer">timesaver.gg</a></td>
+</tr>
+<tr>
+<td>Posty</td>
+<td>замена Postal для массовой работы с почтой</td>
+<td>неофициальный порт на GitHub, ставить на свой риск; Postal под Forever нет (только ретейл, 4.3.5 от 02.10)</td>
+<td><a href="https://timesaver.gg/blog/wow-forever-addons-save-beta-ui-before-launch" target="_blank" rel="noopener noreferrer">timesaver.gg</a></td>
+</tr>
+<tr>
+<td>Auctioneer (Forever)</td>
+<td>второй аукционный аддон</td>
+<td>неофициальный форк (GitHub NoobyGains); дублирует Auctionator — не нужен</td>
+<td><a href="https://github.com/NoobyGains/Auctioneer-Forever" target="_blank" rel="noopener noreferrer">github.com</a></td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li>Journalator (журнал доходов от автора Auctionator) в выдаче про Forever не найден. <span class="b b-mute" title="Источник не указан">без источника</span></li>
+<li>Аддоны брать только с CurseForge, Wago или GitHub автора: сайты с «boost», «carry», «gold» в названии нередко продвигают свои сервисы. <span class="b b-mute" title="Источник не указан">без источника</span></li>
+</ul></article><nav class="pager"><a class="prev" href="gold-05.html">← Особенности Forever, влияющие на экономику</a><a class="next" href="gold-07.html">RMT и Temporary Economy Hold →</a></nav>
+</main>
+</div>
+<script src="search-index.js" defer></script>
+<script src="app.js" defer></script>
+</body>
+</html>

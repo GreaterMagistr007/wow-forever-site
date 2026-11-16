@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Аддоны для профессий под Forever (интерфейс 16001) — Профессии — WoW Forever</title>
+<meta name="description" content="Оффлайн-база знаний и гайды по WoW Forever: прокачка, профессии, золото, аддоны, игра под Linux.">
+<meta name="theme-color" content="#16120c">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="index.html">WoW Forever</a>
+  <button class="menu" type="button" aria-expanded="false" aria-controls="nav">Меню</button>
+  <div class="search">
+    <input id="q" type="search" placeholder="Поиск: маунт, травничество, Legacy…" autocomplete="off" aria-label="Поиск по базе знаний и гайдам">
+    <div id="results" role="listbox" hidden></div>
+  </div>
+</header>
+<div class="layout">
+<nav id="nav" aria-label="Разделы"><a href="index.html">Главная</a><div class="nh">Гайды</div><a href="guide-first-hour.html">Первый час: с чего начать</a><a href="guide-leveling-route.html">Маршрут прокачки 1–60</a><a href="guide-first-gold.html">Деньги на прокачке и маунт к 40</a><a href="guide-professions.html">Профессии: от выбора до 300</a><a href="guide-auctionator.html">Торговля на аукционе с Auctionator</a><a href="guide-level-60.html">Что делать на 60</a><div class="nh">База знаний</div><a href="start.html">С чего начать</a><a href="leveling.html">Прокачка 1–60</a><a href="routes.html">Маршруты прокачки</a><a href="professions.html" class="on" aria-current="page">Профессии</a><a href="gold.html">Золото и аукцион</a><a href="travel.html">Передвижение и маунты</a><a href="dungeons.html">Подземелья, рейды и группы</a><a href="addons.html">Аддоны</a><a href="linux.html">WoW под Linux</a><a href="payment.html">Подписка и оплата</a></nav>
+<main>
+<p class="crumbs"><a href="index.html">Главная</a> › <a href="professions.html">Профессии</a></p><h1>Аддоны для профессий под Forever (интерфейс 16001)</h1><details class="toc" open><summary>На странице</summary><ol><li><a href="#сбор">Сбор</a></li><li><a href="#планировщики-прокачки-curseforge">Планировщики прокачки (CurseForge)</a></li><li><a href="#цены-и-альты">Цены и альты</a></li></ol></details><article><h3 id="сбор">Сбор</h3>
+<ul>
+<li>GatherMate2 запоминает точки сбора на карте и миникарте. Версия Forever: 1.52.4 от 3.11 (TOC 16001), по другому сайту 1.52.5 от 6.11, по третьему — альфа от 22.10 <span class="b b-bad" title="Источники противоречат друг другу">спорно</span> (<a href="https://wowforeveraddons.com/addons/gathermate2" target="_blank" rel="noopener noreferrer">источник</a>, <a href="https://timesaver.gg/blog/wow-forever-addons-save-beta-ui-before-launch" target="_blank" rel="noopener noreferrer">источник</a>, <a href="https://wofwforever.com/en/guides/wow-forever-addon-compatibility/" target="_blank" rel="noopener noreferrer">источник</a>)</li>
+<li>Баг GatherMate2 (баг-репорт 06.11.2026, с бета-клиента): в стартовых «микро-зонах» точки не показываются и не записываются; выход в родительскую зону восстанавливает <span class="b b-ok" title="Подтверждено для WoW Forever">Forever</span> (<a href="https://www.wowace.com/projects/gathermate2" target="_blank" rel="noopener noreferrer">источник</a>)</li>
+<li>Если точки не видны на миникарте — проверить, включён ли поиск трав/минералов у персонажа; база точек в Forever заполняется с нуля (зоны изменены) <span class="b b-mute" title="Источник не указан">без источника</span></li>
+</ul>
+<h3 id="планировщики-прокачки-curseforge">Планировщики прокачки (CurseForge)</h3>
+<p>Большинство обновлены в ноябре 2026, многие новые и малоскачиваемые — смотреть комментарии.</p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Аддон</th>
+<th>Что делает</th>
+<th>Метка</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Profession Planner (GrovahGaming, ~102.5K загрузок — самый популярный)</td>
+<td>самый дешёвый маршрут до 75/150/225/300, цены из Auctionator или TSM</td>
+<td><span class="b b-ok" title="Подтверждено для WoW Forever">Forever</span> (<a href="https://www.curseforge.com/wow/addons/profplanner" target="_blank" rel="noopener noreferrer">источник</a>)</td>
+</tr>
+<tr>
+<td>Forever Professions (DarkDracos89)</td>
+<td>то же, использует данные Blackthornes Farmer при наличии</td>
+<td><span class="b b-ok" title="Подтверждено для WoW Forever">Forever</span> (<a href="https://www.curseforge.com/wow/addons/forever-professions" target="_blank" rel="noopener noreferrer">источник</a>)</td>
+</tr>
+<tr>
+<td>Profs! (ETMA)</td>
+<td>маршруты Cheapest / Fastest / Balanced, списки покупок, ведомый крафт; использует TSM, Auctionator, Pawn, GatherMate2; заявлен Forever 1.60.x (16001), «ещё мало тестирован на живом сервере»</td>
+<td><span class="b b-ok" title="Подтверждено для WoW Forever">Forever</span> (<a href="https://www.curseforge.com/wow/addons/profs" target="_blank" rel="noopener noreferrer">источник</a>)</td>
+</tr>
+<tr>
+<td>Forever Profession Capper (Cyrieusgaming)</td>
+<td>одна рекомендация «что крафтить следующим» по ценам Auctionator; Interface 16001</td>
+<td><span class="b b-ok" title="Подтверждено для WoW Forever">Forever</span> (<a href="https://www.curseforge.com/wow/addons/forever-profession-capper" target="_blank" rel="noopener noreferrer">источник</a>)</td>
+</tr>
+<tr>
+<td>Professionator-Forever (Dizzy_Frostgaard)</td>
+<td>шаги 1–300, библиотека рецептов, окно сбора</td>
+<td><span class="b b-ok" title="Подтверждено для WoW Forever">Forever</span> (<a href="https://www.curseforge.com/wow/addons/professionator-forever" target="_blank" rel="noopener noreferrer">источник</a>)</td>
+</tr>
+<tr>
+<td>Level Professions Forever, ProfessionGuide - Forever (сам называет себя early stage), ProfessionPal</td>
+<td>мелкие и ранние</td>
+<td><span class="b b-ok" title="Подтверждено для WoW Forever">Forever</span> <span class="b b-mute" title="Источник не указан">без источника</span></td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li>Ставить один планировщик (Profession Planner как самый проверенный или Profs!) в паре с Auctionator <span class="b b-mute" title="Источник не указан">без источника</span></li>
+</ul>
+<h3 id="цены-и-альты">Цены и альты</h3>
+<ul>
+<li>Auctionator для Forever есть: сборки 341 (13.10) / 343 (8.11) по одним данным, 341 (13.10) / 344 (09.11) — по другим; лежит на Wago. Многие планировщики берут цены из него <span class="b b-bad" title="Источники противоречат друг другу">спорно</span> (<a href="https://wowforeveraddons.com/addons/auctionator" target="_blank" rel="noopener noreferrer">источник</a>)</li>
+<li>Историю цен Auctionator собирает только из собственных сканов, а экономика Forever стартовала 04.11 с нуля — сканировать при каждом визите <span class="b b-ok" title="Подтверждено для WoW Forever">Forever</span> (<a href="https://wowforeveraddons.com/addons/auctionator" target="_blank" rel="noopener noreferrer">источник</a>)</li>
+<li>TradeSkillMaster: по одним данным версия для Forever появилась (v4.15.5, 9.11; в октябре её не было), по другим — версий TSM для Forever нет <span class="b b-bad" title="Источники противоречат друг другу">спорно</span> (<a href="https://wowforevertierlist.com/addons/tsm" target="_blank" rel="noopener noreferrer">источник</a>, <a href="https://timesaver.gg/blog/wow-forever-addons-save-beta-ui-before-launch" target="_blank" rel="noopener noreferrer">источник</a>)</li>
+<li>Altoholic (рецепты и сумки всех альтов): файл для Forever есть (v1.60.005 от 14.10) <span class="b b-ok" title="Подтверждено для WoW Forever">Forever</span> (<a href="https://forevermastery.com/en/addons/forever-compatibility" target="_blank" rel="noopener noreferrer">источник</a>)</li>
+<li>Baganator (нужен Syndicator) — поиск предметов по всем персонажам и банкам, удобно, если ремесленник — альт <span class="b b-ok" title="Подтверждено для WoW Forever">Forever</span> (<a href="https://wowforeveraddons.com/addons/baganator" target="_blank" rel="noopener noreferrer">источник</a>)</li>
+<li>LootAppraiser Reloaded — есть для Forever; Postal и оригинальный LootAppraiser — нет (на 9.11); вместо Postal — неофициальный порт Posty (GitHub, на свой риск) <span class="b b-ok" title="Подтверждено для WoW Forever">Forever</span> (<a href="https://timesaver.gg/blog/wow-forever-addons-save-beta-ui-before-launch" target="_blank" rel="noopener noreferrer">источник</a>)</li>
+<li>Почта между персонажами одного аккаунта мгновенная; аккаунтового банка нет — реагенты альту-крафтеру передаются почтой <span class="b b-ok" title="Подтверждено для WoW Forever">Forever</span> (<a href="https://www.icy-veins.com/wow-forever/news/account-wide-banks-could-be-coming-to-wow-forever/" target="_blank" rel="noopener noreferrer">источник</a>)</li>
+</ul></article><nav class="pager"><a class="prev" href="professions-10.html">← Заработок на профессиях и кулдауны</a><span></span></nav>
+</main>
+</div>
+<script src="search-index.js" defer></script>
+<script src="app.js" defer></script>
+</body>
+</html>

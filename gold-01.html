@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Аукцион на мегасервере — Золото и аукцион — WoW Forever</title>
+<meta name="description" content="Оффлайн-база знаний и гайды по WoW Forever: прокачка, профессии, золото, аддоны, игра под Linux.">
+<meta name="theme-color" content="#16120c">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="index.html">WoW Forever</a>
+  <button class="menu" type="button" aria-expanded="false" aria-controls="nav">Меню</button>
+  <div class="search">
+    <input id="q" type="search" placeholder="Поиск: маунт, травничество, Legacy…" autocomplete="off" aria-label="Поиск по базе знаний и гайдам">
+    <div id="results" role="listbox" hidden></div>
+  </div>
+</header>
+<div class="layout">
+<nav id="nav" aria-label="Разделы"><a href="index.html">Главная</a><div class="nh">Гайды</div><a href="guide-first-hour.html">Первый час: с чего начать</a><a href="guide-leveling-route.html">Маршрут прокачки 1–60</a><a href="guide-first-gold.html">Деньги на прокачке и маунт к 40</a><a href="guide-professions.html">Профессии: от выбора до 300</a><a href="guide-auctionator.html">Торговля на аукционе с Auctionator</a><a href="guide-level-60.html">Что делать на 60</a><div class="nh">База знаний</div><a href="start.html">С чего начать</a><a href="leveling.html">Прокачка 1–60</a><a href="routes.html">Маршруты прокачки</a><a href="professions.html">Профессии</a><a href="gold.html" class="on" aria-current="page">Золото и аукцион</a><a href="travel.html">Передвижение и маунты</a><a href="dungeons.html">Подземелья, рейды и группы</a><a href="addons.html">Аддоны</a><a href="linux.html">WoW под Linux</a><a href="payment.html">Подписка и оплата</a></nav>
+<main>
+<p class="crumbs"><a href="index.html">Главная</a> › <a href="gold.html">Золото и аукцион</a></p><h1>Аукцион на мегасервере</h1><details class="toc" open><summary>На странице</summary><ol><li><a href="#устройство-рынков">Устройство рынков</a></li><li><a href="#фракционный-или-общий-аукцион">Фракционный или общий аукцион</a></li><li><a href="#комиссии-и-депозиты">Комиссии и депозиты</a></li><li><a href="#изменения-blizzard-в-экономике">Изменения Blizzard в экономике</a></li></ol></details><article><h3 id="устройство-рынков">Устройство рынков</h3>
+<ul>
+<li>Реалмов нет: у каждого региона и каждого рулсета (Normal / PvP / Roleplay) свой аукцион. AHledger отслеживает 32 рынка (US, EU, CN, KR). <span class="b b-ok" title="Подтверждено для WoW Forever">Forever</span> (<a href="https://ahledger.com/wow-forever/auction-house" target="_blank" rel="noopener noreferrer">ahledger.com</a>)</li>
+<li>Экономика стартовала с нуля 04.11.2026, из беты ничего не перенесено. <span class="b b-ok" title="Подтверждено для WoW Forever">Forever</span> (<a href="https://ahledger.com/wow-forever/auction-house" target="_blank" rel="noopener noreferrer">ahledger.com</a>)</li>
+<li>Масштаб на 16.11: выставлено около 3 млн г в ~2,48 млн лотов. <span class="b b-ok" title="Подтверждено для WoW Forever">Forever</span> (<a href="https://ahledger.com/wow-forever/auction-house" target="_blank" rel="noopener noreferrer">ahledger.com</a>)</li>
+<li>Интерфейс аукциона — современный ретейловый, а не классический: аддоны нужны в Forever-версии, Classic-сборки не подойдут. <span class="b b-ok" title="Подтверждено для WoW Forever">Forever</span> (<a href="https://wofwforever.com/en/guides/wow-forever-addon-compatibility/" target="_blank" rel="noopener noreferrer">wofwforever.com</a>, <a href="https://warcraftforever.games/guides/auction-house" target="_blank" rel="noopener noreferrer">warcraftforever.games</a>)</li>
+</ul>
+<h3 id="фракционный-или-общий-аукцион">Фракционный или общий аукцион</h3>
+<ul>
+<li>AHledger и Hearthproof: персонаж Орды видит только ордынские лоты; theforeverguides.com ссылается на пост Blizzard о правилах. <span class="b b-bad" title="Источники противоречат друг другу">спорно</span> (<a href="https://ahledger.com/wow-forever/auction-house" target="_blank" rel="noopener noreferrer">ahledger.com</a>, <a href="https://hearthproof.com/economy/auction-house/" target="_blank" rel="noopener noreferrer">hearthproof.com</a>, <a href="https://theforeverguides.com/gold-making/auction-house/" target="_blank" rel="noopener noreferrer">theforeverguides.com</a>)</li>
+<li>ConquestCapped (обновление 15.11.2026): аукционы столиц межфракционные. <span class="b b-bad" title="Источники противоречат друг другу">спорно</span> (<a href="https://conquestcapped.com/guides/wow-forever/wow-forever-auction-house/" target="_blank" rel="noopener noreferrer">conquestcapped.com</a>)</li>
+<li>Как проверить самому: найти товар на аукционе и сравнить с ценой на сайте-трекере для своей фракции. <span class="b b-mute" title="Источник не указан">без источника</span></li>
+</ul>
+<h3 id="комиссии-и-депозиты">Комиссии и депозиты</h3>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Аукцион</th>
+<th>Где</th>
+<th>Комиссия с продажи</th>
+<th>Применимость</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Фракционный</td>
+<td>столицы</td>
+<td>5%</td>
+<td><span class="b b-warn" title="Из гайдов по Classic, для Forever не подтверждено">Classic</span>; для Forever — со слов ConquestCapped, сверившего с таблицами клиента</td>
+</tr>
+<tr>
+<td>Нейтральный</td>
+<td>Booty Bay, Gadgetzan, Everlook</td>
+<td>15%</td>
+<td><span class="b b-warn" title="Из гайдов по Classic, для Forever не подтверждено">Classic</span>; для Forever — со слов ConquestCapped</td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li>Ставки для Forever Blizzard не публиковала; цифры выше — классические, ConquestCapped утверждает, что они совпадают с таблицами клиента Forever. <span class="b b-warn" title="Из гайдов по Classic, для Forever не подтверждено">Classic</span> (<a href="https://conquestcapped.com/guides/wow-forever/wow-forever-auction-house/" target="_blank" rel="noopener noreferrer">conquestcapped.com</a>)</li>
+<li>Депозит сейчас — минимум 1 серебро за лот, даже если вендор берёт предмет за 20 медяков (Lore Forever ссылается на статью поддержки Blizzard). <span class="b b-ok" title="Подтверждено для WoW Forever">Forever</span> (<a href="https://loreforeverwow.com/guides/wow-forever-auction-house-deposit-and-fees" target="_blank" rel="noopener noreferrer">loreforeverwow.com</a>)</li>
+<li>Депозит возвращается при продаже и сгорает при истечении срока или отмене лота. <span class="b b-ok" title="Подтверждено для WoW Forever">Forever</span> (<a href="https://loreforeverwow.com/guides/wow-forever-auction-house-deposit-and-fees" target="_blank" rel="noopener noreferrer">loreforeverwow.com</a>)</li>
+<li>Снижение минимального депозита до 1 медяка перенесено на плановое обслуживание 17.11 (EU — 18.11). После него депозит снова считается от вендорной цены: 5% / 20% / 60% за 2 / 8 / 24 часа (по одному сайту). После 17–18.11 проверить в игре. <span class="b b-ok" title="Подтверждено для WoW Forever">Forever</span> (<a href="https://www.icy-veins.com/wow-forever/news/the-auction-house-is-still-unusable-at-low-levels-deposit-cost-change-delayed/" target="_blank" rel="noopener noreferrer">icy-veins.com</a>, <a href="https://wowforever.be/news/1-copper-deposit-waits-until-17-november/" target="_blank" rel="noopener noreferrer">wowforever.be</a>)</li>
+<li>Пока депозит 1 с: мелочь вроде Linen Cloth (~30 медяков за штуку) выставлять только стаками, дешёвый серый хлам — вендору. <span class="b b-ok" title="Подтверждено для WoW Forever">Forever</span> (<a href="https://loreforeverwow.com/guides/wow-forever-auction-house-deposit-and-fees" target="_blank" rel="noopener noreferrer">loreforeverwow.com</a>)</li>
+</ul>
+<h3 id="изменения-blizzard-в-экономике">Изменения Blizzard в экономике</h3>
+<ul>
+<li>На 60 уровне опыт за квесты больше не превращается в золото (в Classic Era превращается). Kaivax (Blizzard): конвертацию убрали, потому что игроки копили журнал выполненных квестов и сдавали их на 60; возвращать не будут. <span class="b b-ok" title="Подтверждено для WoW Forever">Forever</span> (<a href="https://blizzardwatch.com/2026/11/13/gold-is-not-a-quest-reward-in-wow-forever-at-level-60-but-will-be-more-available-from-higher-level-quests/" target="_blank" rel="noopener noreferrer">blizzardwatch.com</a>)</li>
+<li>Хотфикс 10.11.2026: большинство квестов 48+ уровня (не все) получили новую или увеличенную награду золотом. Причина — в оригинале золото дают только ~25% квестов, и без конвертации доход у капа упал сильнее, чем планировали. <span class="b b-ok" title="Подтверждено для WoW Forever">Forever</span> (<a href="https://www.icy-veins.com/wow-forever/news/most-higher-level-quests-are-getting-an-added-or-buffed-gold-reward/" target="_blank" rel="noopener noreferrer">icy-veins.com</a>, <a href="https://warcrafttavern.com/forever/news/more-gold-from-quests-above-level-48-in-wow-forever/" target="_blank" rel="noopener noreferrer">warcrafttavern.com</a>)</li>
+<li>GDKP-рейды (продажа лута за золото) запрещены, чтобы сократить RMT. <span class="b b-ok" title="Подтверждено для WoW Forever">Forever</span> (<a href="https://www.invenglobal.com/articles/26259/wow-forever-bans-gdkp-runs" target="_blank" rel="noopener noreferrer">invenglobal.com</a>)</li>
+<li>Blizzard обещает следить за экономикой и менять доступность материалов и расходников — цены могут резко сдвинуться после хотфиксов. <span class="b b-ok" title="Подтверждено для WoW Forever">Forever</span> <span class="b b-mute" title="Источник не указан">без источника</span></li>
+<li>Forever укоротил кулдауны Arcanite, Mooncloth и Salt Shaker на 1 час против Classic. <span class="b b-ok" title="Подтверждено для WoW Forever">Forever</span> (<a href="https://timesaver.gg/blog/wow-forever-profession-cooldowns-gold" target="_blank" rel="noopener noreferrer">timesaver.gg</a>)</li>
+</ul></article><nav class="pager"><span></span><a class="next" href="gold-02.html">Цены и тренды рынка →</a></nav>
+</main>
+</div>
+<script src="search-index.js" defer></script>
+<script src="app.js" defer></script>
+</body>
+</html>

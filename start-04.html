@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Консольные команды (CVar) — С чего начать — WoW Forever</title>
+<meta name="description" content="Оффлайн-база знаний и гайды по WoW Forever: прокачка, профессии, золото, аддоны, игра под Linux.">
+<meta name="theme-color" content="#16120c">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="index.html">WoW Forever</a>
+  <button class="menu" type="button" aria-expanded="false" aria-controls="nav">Меню</button>
+  <div class="search">
+    <input id="q" type="search" placeholder="Поиск: маунт, травничество, Legacy…" autocomplete="off" aria-label="Поиск по базе знаний и гайдам">
+    <div id="results" role="listbox" hidden></div>
+  </div>
+</header>
+<div class="layout">
+<nav id="nav" aria-label="Разделы"><a href="index.html">Главная</a><div class="nh">Гайды</div><a href="guide-first-hour.html">Первый час: с чего начать</a><a href="guide-leveling-route.html">Маршрут прокачки 1–60</a><a href="guide-first-gold.html">Деньги на прокачке и маунт к 40</a><a href="guide-professions.html">Профессии: от выбора до 300</a><a href="guide-auctionator.html">Торговля на аукционе с Auctionator</a><a href="guide-level-60.html">Что делать на 60</a><div class="nh">База знаний</div><a href="start.html" class="on" aria-current="page">С чего начать</a><a href="leveling.html">Прокачка 1–60</a><a href="routes.html">Маршруты прокачки</a><a href="professions.html">Профессии</a><a href="gold.html">Золото и аукцион</a><a href="travel.html">Передвижение и маунты</a><a href="dungeons.html">Подземелья, рейды и группы</a><a href="addons.html">Аддоны</a><a href="linux.html">WoW под Linux</a><a href="payment.html">Подписка и оплата</a></nav>
+<main>
+<p class="crumbs"><a href="index.html">Главная</a> › <a href="start.html">С чего начать</a></p><h1>Консольные команды (CVar)</h1><article><p>Вводятся в чат, работают сразу и сохраняются. Источники всего раздела: <a href="https://endgametools.com/en/wow-forever/news/wow-forever-graphics-settings" target="_blank" rel="noopener noreferrer">Endgame Tools</a>, <a href="https://pixelnitro.com/wow-forever-console-commands-guide-complete-ui-engine-cvars-for-2026/" target="_blank" rel="noopener noreferrer">PixelNitro</a>, <a href="https://vgtimes.com/cheats/174273-wow-forever-console-commands-useful-cvars-and-how-to-use-them.html" target="_blank" rel="noopener noreferrer">VGTimes</a>.</p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Команда</th>
+<th>Что делает</th>
+<th>Оговорка</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>/console cameraDistanceMaxZoomFactor 2.6</code></td>
+<td>Камера дальше (около 39 ярдов); ползунок в меню доходит только до 2.0</td>
+<td>Значения выше 2.6 не подтверждены. Проверка: <code>/dump GetCVar("cameraDistanceMaxZoomFactor")</code> <span class="b b-ok" title="Подтверждено для WoW Forever">Forever</span></td>
+</tr>
+<tr>
+<td><code>/console nameplateMaxDistance 45</code></td>
+<td>Полоски над врагами видны дальше; слайдера в Forever нет</td>
+<td>Какой максимум принимает клиент — не проверено; в Classic Era потолок был 20 ярдов <span class="b b-ok" title="Подтверждено для WoW Forever">Forever</span></td>
+</tr>
+<tr>
+<td><code>/console nameplateSelectedScale 1.2</code></td>
+<td>Выделенная цель крупнее</td>
+<td><span class="b b-ok" title="Подтверждено для WoW Forever">Forever</span></td>
+</tr>
+<tr>
+<td><code>/console cameraSmoothStyle 0</code></td>
+<td>Камера не «доворачивается» сама за спину</td>
+<td><span class="b b-ok" title="Подтверждено для WoW Forever">Forever</span></td>
+</tr>
+<tr>
+<td><code>/console scriptErrors 1</code></td>
+<td>Показывать ошибки Lua (поиск сломанного аддона)</td>
+<td>Потом вернуть 0 <span class="b b-ok" title="Подтверждено для WoW Forever">Forever</span></td>
+</tr>
+<tr>
+<td><code>/console cvar_default &lt;имя&gt;</code></td>
+<td>Сброс одной переменной</td>
+<td>Без имени сбрасывает ВСЕ переменные <span class="b b-ok" title="Подтверждено для WoW Forever">Forever</span></td>
+</tr>
+</tbody>
+</table></div></article><nav class="pager"><a class="prev" href="start-03.html">← Настройки в первые минуты</a><a class="next" href="start-05.html">Макросы →</a></nav>
+</main>
+</div>
+<script src="search-index.js" defer></script>
+<script src="app.js" defer></script>
+</body>
+</html>

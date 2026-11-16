@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Аддоны — WoW Forever</title>
+<meta name="description" content="Оффлайн-база знаний и гайды по WoW Forever: прокачка, профессии, золото, аддоны, игра под Linux.">
+<meta name="theme-color" content="#16120c">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="index.html">WoW Forever</a>
+  <button class="menu" type="button" aria-expanded="false" aria-controls="nav">Меню</button>
+  <div class="search">
+    <input id="q" type="search" placeholder="Поиск: маунт, травничество, Legacy…" autocomplete="off" aria-label="Поиск по базе знаний и гайдам">
+    <div id="results" role="listbox" hidden></div>
+  </div>
+</header>
+<div class="layout">
+<nav id="nav" aria-label="Разделы"><a href="index.html">Главная</a><div class="nh">Гайды</div><a href="guide-first-hour.html">Первый час: с чего начать</a><a href="guide-leveling-route.html">Маршрут прокачки 1–60</a><a href="guide-first-gold.html">Деньги на прокачке и маунт к 40</a><a href="guide-professions.html">Профессии: от выбора до 300</a><a href="guide-auctionator.html">Торговля на аукционе с Auctionator</a><a href="guide-level-60.html">Что делать на 60</a><div class="nh">База знаний</div><a href="start.html">С чего начать</a><a href="leveling.html">Прокачка 1–60</a><a href="routes.html">Маршруты прокачки</a><a href="professions.html">Профессии</a><a href="gold.html">Золото и аукцион</a><a href="travel.html">Передвижение и маунты</a><a href="dungeons.html">Подземелья, рейды и группы</a><a href="addons.html" class="on" aria-current="page">Аддоны</a><a href="linux.html">WoW под Linux</a><a href="payment.html">Подписка и оплата</a></nav>
+<main>
+<p class="crumbs"><a href="index.html">Главная</a> › База знаний</p><h1>Аддоны</h1><p class="lead">Как ставить аддоны в WoW Forever, что проверять в архиве, особенности популярных аддонов и что ещё стоит попробовать.</p><section class="summary"><h2>Коротко</h2><ul>
+<li>Ставить только файлы с пометкой Forever и <code>16001</code> в <code>.toc</code>.</li>
+<li>После установки — полный перезапуск клиента, <code>/reload</code> не поможет.</li>
+<li>Устаревший аддон включается флажком «Загружать устаревшие модификации».</li>
+<li>К Questie и Auctionator первым делом стоит добавить Leatrix Plus, сумочный аддон и Details!.</li>
+<li>WeakAuras под Forever нет, есть ForeverAuras.</li>
+</ul></section><h2>Статьи</h2><ul class="alist"><li><a href="addons-01.html">Как устроено</a><span>Клиент 1.60.1.70938, версия интерфейса 16001 . Аддоны лежат в папке клиента: World of Warcraft/_forever_/Interface/AddOns . Подходит только аддон, у которого в .toc есть…</span></li><li><a href="addons-02.html">Как поставить новый аддон</a><span>Скачать файл с пометкой с CurseForge в браузере (сайт закрыт проверкой Cloudflare, скриптом не скачать). Проверить архив: в .toc есть 16001 , внутри только Lua, XML,…</span></li><li><a href="addons-03.html">Особенности популярных аддонов</a><span>Questie ( /questie , проверено на 12.9.0) ставится вместе с QuestieDB — без него не работает; при первом входе пару минут собирает базу, игра на это время подвисает.…</span></li><li><a href="addons-04.html">Что ещё стоит попробовать</a><span>Сведения из поисковой выдачи и обзоров. Перед установкой проверять 16001 в .toc . Интерфейс и удобство Leatrix Plus — ветка 1.60.x-forever, последняя найденная 1.60.30…</span></li><li><a href="addons-05.html">Чего под Forever нет</a><span>WeakAuras — версии для нет, вместо него отдельный проект ForeverAuras. TradeSkillMaster — один обзор пишет, что версии под нет. При этом TSM 4.15.7 от 13.11.2026 с 16001…</span></li></ul>
+</main>
+</div>
+<script src="search-index.js" defer></script>
+<script src="app.js" defer></script>
+</body>
+</html>

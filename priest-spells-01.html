@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Наставники Альянса — Навыки жреца по уровням — WoW Forever</title>
+<meta name="description" content="Оффлайн-база знаний и гайды по WoW Forever: прокачка, профессии, золото, аддоны, игра под Linux.">
+<meta name="theme-color" content="#16120c">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="index.html">WoW Forever</a>
+  <button class="menu" type="button" aria-expanded="false" aria-controls="nav">Меню</button>
+  <div class="search">
+    <input id="q" type="search" placeholder="Поиск: маунт, травничество, Legacy…" autocomplete="off" aria-label="Поиск по базе знаний и гайдам">
+    <div id="results" role="listbox" hidden></div>
+  </div>
+</header>
+<div class="layout">
+<nav id="nav" aria-label="Разделы"><a href="index.html">Главная</a><div class="nh">Гайды</div><a href="guide-first-hour.html">Первый час: с чего начать</a><a href="guide-leveling-route.html">Маршрут прокачки 1–60</a><a href="guide-first-gold.html">Деньги на прокачке и маунт к 40</a><a href="guide-professions.html">Профессии: от выбора до 300</a><a href="guide-auctionator.html">Торговля на аукционе с Auctionator</a><a href="guide-level-60.html">Что делать на 60</a><div class="nh">База знаний</div><a href="start.html">С чего начать</a><a href="leveling.html">Прокачка 1–60</a><a href="routes.html">Маршруты прокачки</a><a href="professions.html">Профессии</a><a href="gold.html">Золото и аукцион</a><a href="travel.html">Передвижение и маунты</a><a href="dungeons.html">Подземелья, рейды и группы</a><a href="addons.html">Аддоны</a><a href="linux.html">WoW под Linux</a><a href="payment.html">Подписка и оплата</a><a href="alliance-route.html">Маршрут Альянса 20–60 по зонам</a><a href="dungeon-quests.html">Задания подземелий 18–60 для Альянса</a><a href="gold-for-leveling.html">Золото и профессии под быструю прокачку</a><a href="priest.html">Жрец на прокачке</a><a href="leveling-hacks.html">Лайфхаки скорости прокачки и изменения после запуска</a><a href="priest-spells.html" class="on" aria-current="page">Навыки жреца по уровням</a></nav>
+<main>
+<p class="crumbs"><a href="index.html">Главная</a> › <a href="priest-spells.html">Навыки жреца по уровням</a></p><h1>Наставники Альянса</h1><article><ul>
+<li>Все наставники в столицах, Goldshire (Златоземье), Kharanos (Каранос) и Dolanaar (Доланаар) учат полный список; наставники стартовых долин — только заклинания до 6 уровня. В Classic у Wowhead Priestess Anetta (Жрица Анетта) учит 5 заклинаний (до 6 ур.), Priestess Josetta (Жрица Жозетта) и High Priestess Laurena (Верховная жрица Лорена) — по 159. <span class="b b-ok" title="Подтверждено для WoW Forever">Forever</span> (<a href="https://www.warcrafttavern.com/forever/guides/class-trainers/" target="_blank" rel="noopener noreferrer">Warcraft Tavern</a>) <span class="b b-warn" title="Из гайдов по Classic, для Forever не подтверждено">Classic</span> (<a href="https://www.wowhead.com/classic/npc=375" target="_blank" rel="noopener noreferrer">Wowhead Classic</a>)</li>
+<li>Координаты — из локальной базы db/forever.sqlite (Questie + CatQuest); где Warcraft Tavern даёт другие цифры, они указаны в скобках.</li>
+</ul>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Наставник</th>
+<th>NPC ID</th>
+<th>Где</th>
+<th>Координаты</th>
+<th>Примечание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>High Priestess Laurena (Верховная жрица Лорена)</td>
+<td>376</td>
+<td>Stormwind City (Штормград), Cathedral of Light (русское название не найдено), Cathedral Square (Соборная площадь)</td>
+<td>49.5, 44.6</td>
+<td>Полный список; выдаёт и принимает расовые задания человека (Divine Grace (Божественное покровительство), Arcane Feedback (Волшебное искажение))</td>
+</tr>
+<tr>
+<td>Brother Joshua (Брат Джошуа)</td>
+<td>5489</td>
+<td>Штормград, Cathedral of Light</td>
+<td>49.5, 45.2</td>
+<td>Полный список; выдаёт цепочку 50 ур. Cenarion Aid (Помощь Кенарию)</td>
+</tr>
+<tr>
+<td>Brother Benjamin (Брат Бенджамин)</td>
+<td>5484</td>
+<td>Штормград, Cathedral of Light</td>
+<td>52.3, 47.7 (WT: 50.8, 44.8)</td>
+<td>Координаты расходятся <span class="b b-bad" title="Источники противоречат друг другу">спорно</span></td>
+</tr>
+<tr>
+<td>Nara Meideros (Нара Мейдерос)</td>
+<td>11397</td>
+<td>Штормград, The Park (Парк)</td>
+<td>35.7, 63.2</td>
+<td>Полный список</td>
+</tr>
+<tr>
+<td>Priestess Josetta (Жрица Жозетта)</td>
+<td>377</td>
+<td>Elwynn Forest (Элвиннский лес), Goldshire (Златоземье)</td>
+<td>43.3, 65.7</td>
+<td>Ближайший к Штормграду полный наставник</td>
+</tr>
+<tr>
+<td>Priestess Anetta (Жрица Анетта)</td>
+<td>375</td>
+<td>Элвиннский лес, Northshire Abbey (Аббатство Североземья)</td>
+<td>49.8, 39.5</td>
+<td>Только до 6 ур.</td>
+</tr>
+<tr>
+<td>High Priest Rohan (Верховный жрец Рохан)</td>
+<td>11406</td>
+<td>Ironforge (Стальгорн), Mystic Ward (Палаты Магии)</td>
+<td>24.7, 8.2 (WT: 25.6, 9.0)</td>
+<td>Полный список</td>
+</tr>
+<tr>
+<td>Theodrus Frostbeard (Теодрус Ледобород)</td>
+<td>5141</td>
+<td>Стальгорн, Палаты Магии</td>
+<td>24.1, 8.4 (WT: 24.0, 10.2)</td>
+<td>Полный список</td>
+</tr>
+<tr>
+<td>Braenna Flintcrag (Браэнна Кремнескал)</td>
+<td>5142</td>
+<td>Стальгорн, Палаты Магии</td>
+<td>24.4, 9.2 (WT: 25.4, 8.4)</td>
+<td>Полный список</td>
+</tr>
+<tr>
+<td>Toldren Deepiron (Толдрен Котельник)</td>
+<td>5143</td>
+<td>Стальгорн, Палаты Магии</td>
+<td>25.2, 10.8 (WT: 25.6, 10.2)</td>
+<td>Полный список</td>
+</tr>
+<tr>
+<td>High Priestess Mims (Верховная жрица Мимс)</td>
+<td>258785</td>
+<td>Стальгорн</td>
+<td>24.6, 10.0</td>
+<td>Новая в Forever, подпись Priest Trainer; выдаёт задания гномов Confounding Flash (Ошарашивающая вспышка) и Contingency Plan (Запасной план). У Warcraft Tavern её нет. <span class="b b-ok" title="Подтверждено для WoW Forever">Forever</span></td>
+</tr>
+<tr>
+<td>Maxan Anvol (Максан Анвол)</td>
+<td>1226</td>
+<td>Dun Morogh (Дун Морог), Kharanos (Каранос)</td>
+<td>47.3, 52.2</td>
+<td>Полный список</td>
+</tr>
+<tr>
+<td>Branstock Khalder (Брансток Халдер)</td>
+<td>837</td>
+<td>Дун Морог, Coldridge Valley (Холодная долина)</td>
+<td>28.6, 66.4</td>
+<td>Только до 6 ур.</td>
+</tr>
+<tr>
+<td>Priestess Alathea (Жрица Алатея)</td>
+<td>11401</td>
+<td>Darnassus (Дарнасс), Temple of the Moon (Храм Луны)</td>
+<td>39.5, 81.2 (WT: 38.9, 81.0)</td>
+<td>Полный список</td>
+</tr>
+<tr>
+<td>Astarii Starseeker (Астария Ловец Звезд)</td>
+<td>4090</td>
+<td>Дарнасс, Храм Луны</td>
+<td>38.3, 81.0 (WT: 38.9, 81.4)</td>
+<td>Полный список</td>
+</tr>
+<tr>
+<td>Jandria (Джандрия)</td>
+<td>4091</td>
+<td>Дарнасс, Храм Луны</td>
+<td>37.9, 82.7 (WT: 38.4, 82.5)</td>
+<td>Полный список</td>
+</tr>
+<tr>
+<td>Lariia (Лария)</td>
+<td>4092</td>
+<td>Дарнасс, Храм Луны</td>
+<td>40.4, 88.7</td>
+<td>Полный список</td>
+</tr>
+<tr>
+<td>Laurna Morninglight (Лорна Утренний Свет)</td>
+<td>3600</td>
+<td>Teldrassil (Тельдрассил), Dolanaar (Доланаар)</td>
+<td>55.6, 56.8</td>
+<td>Полный список</td>
+</tr>
+<tr>
+<td>Shanda (Шанда)</td>
+<td>3595</td>
+<td>Тельдрассил, Shadowglen (Тенистая долина)</td>
+<td>59.2, 40.4</td>
+<td>Только до 6 ур.</td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li>Для человека 19 ур.: ближайшие полные наставники — Жозетта в Златоземье и Лорена в Штормграде; к Лорене всё равно идти на 20 ур. за заданием Arcane Feedback (Волшебное искажение). <span class="b b-mute" title="Источник не указан">без источника</span> (вывод из таблицы)</li>
+<li>Двойная специализация талантов покупается у наставника класса с 40 ур. <span class="b b-ok" title="Подтверждено для WoW Forever">Forever</span> (<a href="https://www.warcrafttavern.com/forever/guides/priest-leveling/" target="_blank" rel="noopener noreferrer">Warcraft Tavern</a>); цена — в kb/14-priest.md.</li>
+<li>Новые ранги не появляются на панели сами: после покупки проверить книгу заклинаний и при необходимости перетащить новый ранг на панель. <span class="b b-ok" title="Подтверждено для WoW Forever">Forever</span> (<a href="https://www.dtgre.com/2026/11/wow-forever-spell-training-too-expensive-save-gold.html" target="_blank" rel="noopener noreferrer">DTGRE</a>)</li>
+</ul></article><nav class="pager"><span></span><a class="next" href="priest-spells-02.html">Навыки по уровням →</a></nav>
+</main>
+</div>
+<script src="search-index.js" defer></script>
+<script src="app.js" defer></script>
+</body>
+</html>

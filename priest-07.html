@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Соло-ротация и как не простаивать — Жрец на прокачке — WoW Forever</title>
+<meta name="description" content="Оффлайн-база знаний и гайды по WoW Forever: прокачка, профессии, золото, аддоны, игра под Linux.">
+<meta name="theme-color" content="#16120c">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="index.html">WoW Forever</a>
+  <button class="menu" type="button" aria-expanded="false" aria-controls="nav">Меню</button>
+  <div class="search">
+    <input id="q" type="search" placeholder="Поиск: маунт, травничество, Legacy…" autocomplete="off" aria-label="Поиск по базе знаний и гайдам">
+    <div id="results" role="listbox" hidden></div>
+  </div>
+</header>
+<div class="layout">
+<nav id="nav" aria-label="Разделы"><a href="index.html">Главная</a><div class="nh">Гайды</div><a href="guide-first-hour.html">Первый час: с чего начать</a><a href="guide-leveling-route.html">Маршрут прокачки 1–60</a><a href="guide-first-gold.html">Деньги на прокачке и маунт к 40</a><a href="guide-professions.html">Профессии: от выбора до 300</a><a href="guide-auctionator.html">Торговля на аукционе с Auctionator</a><a href="guide-level-60.html">Что делать на 60</a><div class="nh">База знаний</div><a href="start.html">С чего начать</a><a href="leveling.html">Прокачка 1–60</a><a href="routes.html">Маршруты прокачки</a><a href="professions.html">Профессии</a><a href="gold.html">Золото и аукцион</a><a href="travel.html">Передвижение и маунты</a><a href="dungeons.html">Подземелья, рейды и группы</a><a href="addons.html">Аддоны</a><a href="linux.html">WoW под Linux</a><a href="payment.html">Подписка и оплата</a><a href="alliance-route.html">Маршрут Альянса 20–60 по зонам</a><a href="dungeon-quests.html">Задания подземелий 18–60 для Альянса</a><a href="gold-for-leveling.html">Золото и профессии под быструю прокачку</a><a href="priest.html" class="on" aria-current="page">Жрец на прокачке</a><a href="leveling-hacks.html">Лайфхаки скорости прокачки и изменения после запуска</a><a href="priest-spells.html">Навыки жреца по уровням</a></nav>
+<main>
+<p class="crumbs"><a href="index.html">Главная</a> › <a href="priest.html">Жрец на прокачке</a></p><h1>Соло-ротация и как не простаивать</h1><details class="toc" open><summary>На странице</summary><ol><li><a href="#правила-общие-для-всех-уровней">Правила, общие для всех уровней</a></li><li><a href="#1039-жезл-discipline-spirit-tap">10–39: жезл (Discipline + Spirit Tap)</a></li><li><a href="#4060-shadow">40–60: Shadow</a></li><li><a href="#лечение-в-подземельях">Лечение в подземельях</a></li></ol></details><article><h3 id="правила-общие-для-всех-уровней">Правила, общие для всех уровней</h3>
+<ul>
+<li>Бафы держать всегда: Power Word: Fortitude (Слово силы: Стойкость), с 12 — Inner Fire (Внутренний огонь), обновлять, когда кончились заряды; с 30 — Divine Spirit (Божественный дух) на себя. <span class="b b-ok" title="Подтверждено для WoW Forever">Forever</span> (<a href="https://www.zockify.com/forever/priest/leveling/" target="_blank" rel="noopener noreferrer">Zockify</a>, <a href="https://www.warcrafttavern.com/forever/guides/priest-leveling/" target="_blank" rel="noopener noreferrer">Warcraft Tavern</a>)</li>
+<li>Power Word: Shield (Слово силы: Щит) до боя: пока щит держится, заклинания не сбиваются уроном (это записано в самой подсказке Forever). <span class="b b-ok" title="Подтверждено для WoW Forever">Forever</span> (<a href="https://foreverchanges.pro/class/priest" target="_blank" rel="noopener noreferrer">ForeverChanges</a>, <a href="https://www.method.gg/wow-forever/wow-forever-priest-leveling-guide-and-talents" target="_blank" rel="noopener noreferrer">Method</a>)</li>
+<li>Добивать жезлом. Spirit Tap (Захват духа) срабатывает от убийства не серого противника, гайды советуют, чтобы последний удар был ваш; выстрелы жезла не тратят ману и не сбрасывают «правило 5 секунд», после которого идёт полный реген от духа. Лишние заклинания по почти мёртвому мобу этот таймер сбрасывают. <span class="b b-ok" title="Подтверждено для WoW Forever">Forever</span> (<a href="https://mobalytics.gg/wow-forever/profile/kargoz/classes/1-60-shadow-priest-leveling-guide-wands-talents-rotation-tips-and-tricks" target="_blank" rel="noopener noreferrer">Mobalytics, Kargoz</a>, <a href="https://www.zockify.com/forever/priest/leveling/" target="_blank" rel="noopener noreferrer">Zockify</a>, из выдачи)</li>
+<li>Не бить заклинаниями мобов, которых добьют пара выстрелов или уже висящая «Боль». <span class="b b-ok" title="Подтверждено для WoW Forever">Forever</span> (<a href="https://www.zockify.com/forever/priest/leveling/" target="_blank" rel="noopener noreferrer">Zockify</a>)</li>
+<li>Лечиться перед следующим пулом, а не сразу после боя — реген маны успевает поработать. Пить, только когда маны меньше примерно трети (при включённом Spirit Tap). <span class="b b-ok" title="Подтверждено для WoW Forever">Forever</span> (<a href="https://www.zockify.com/forever/priest/leveling/" target="_blank" rel="noopener noreferrer">Zockify</a>, из выдачи)</li>
+<li>В Forever эффекты периодического урона сразу «метят» моба на вас (в старом Classic тег давал только прямой урон). При конкуренции за моба начинать с Shadow Word: Pain (Слово Тьмы: Боль). <span class="b b-ok" title="Подтверждено для WoW Forever">Forever</span> (<a href="https://www.method.gg/wow-forever/wow-forever-priest-leveling-guide-and-talents" target="_blank" rel="noopener noreferrer">Method</a>)</li>
+<li>Периодические эффекты (Обновление, Боль, Чума) в Forever не «запоминают» силу при наложении, а пересчитывают её на каждом тике. Бафф силы заклинаний посреди боя усиливает уже висящие эффекты. <span class="b b-ok" title="Подтверждено для WoW Forever">Forever</span> (<a href="https://www.warcrafttavern.com/forever/guides/priest-leveling/" target="_blank" rel="noopener noreferrer">Warcraft Tavern</a>)</li>
+<li>Жезлы не получают урон от силы заклинаний (так было в ранней бете, исправлено). Урон жезла — только его собственный DPS и Wand Specialization (Специализация на жезлах). <span class="b b-ok" title="Подтверждено для WoW Forever">Forever</span> (<a href="https://www.zockify.com/forever/wand-progression/" target="_blank" rel="noopener noreferrer">Zockify: жезлы</a>)</li>
+<li>Psychic Scream (Ментальный крик) даёт время подлечиться или уйти, но испуганный моб может привести соседей. <span class="b b-ok" title="Подтверждено для WoW Forever">Forever</span> (<a href="https://www.zockify.com/forever/priest/leveling/" target="_blank" rel="noopener noreferrer">Zockify</a>, <a href="https://www.warcrafttavern.com/forever/guides/priest-leveling/" target="_blank" rel="noopener noreferrer">Warcraft Tavern</a>)</li>
+</ul>
+<h3 id="1039-жезл-discipline-spirit-tap">10–39: жезл (Discipline + Spirit Tap)</h3>
+<ol>
+<li>Щит → Mind Blast (Взрыв разума) издалека → Shadow Word: Pain (Слово Тьмы: Боль) → жезл до смерти. <span class="b b-ok" title="Подтверждено для WoW Forever">Forever</span> (<a href="https://www.method.gg/wow-forever/wow-forever-priest-leveling-guide-and-talents" target="_blank" rel="noopener noreferrer">Method</a>, <a href="https://www.sportskeeda.com/mmo/wow-forever-priest-leveling-guide-best-spec-talents-rotation" target="_blank" rel="noopener noreferrer">Sportskeeda</a>)</li>
+<li>С 20 на толстого моба добавить Devouring Plague (Всепожирающая чума): урон лечит вас, перезарядка 24 с. <span class="b b-ok" title="Подтверждено для WoW Forever">Forever</span> (<a href="https://www.warcrafttavern.com/forever/guides/priest-leveling/" target="_blank" rel="noopener noreferrer">Warcraft Tavern</a>, <a href="https://foreverchanges.pro/class/priest" target="_blank" rel="noopener noreferrer">ForeverChanges</a>)</li>
+<li>С 22 — ранг 3 Взрыва разума: Zockify с этого уровня строит ротацию «Взрыв разума → Боль → жезл». <span class="b b-ok" title="Подтверждено для WoW Forever">Forever</span> (<a href="https://www.zockify.com/forever/priest/leveling/" target="_blank" rel="noopener noreferrer">Zockify</a>)</li>
+<li>С 30 (или 35–37, по сборке) — Penance (Исповедь) по откату: урон по врагу или лечение себя. <span class="b b-ok" title="Подтверждено для WoW Forever">Forever</span> (<a href="https://www.warcrafttavern.com/forever/guides/priest-leveling/" target="_blank" rel="noopener noreferrer">Warcraft Tavern</a>)</li>
+<li>С 32 — Shadow Word: Death (Слово Тьмы: Смерть) только как добивание, когда цель точно умрёт: иначе отдача 30% здоровья. <span class="b b-ok" title="Подтверждено для WoW Forever">Forever</span> (<a href="https://www.zockify.com/forever/priest/leveling/" target="_blank" rel="noopener noreferrer">Zockify</a>)</li>
+<li>По Zockify с 36 (Пытка разума ранг 3 + Улучшенная пытка разума) Mind Flay (Пытка разума) выгоднее жезла; давать ей докастоваться — поздние тики сильнее. Это при сборке Zockify, где Mind Flay взят до 40. <span class="b b-ok" title="Подтверждено для WoW Forever">Forever</span> (<a href="https://www.zockify.com/forever/priest/leveling/" target="_blank" rel="noopener noreferrer">Zockify</a>)</li>
+</ol>
+<h3 id="4060-shadow">40–60: Shadow</h3>
+<ol>
+<li>Shadowform (Облик Тьмы) — постоянно в соло. <span class="b b-ok" title="Подтверждено для WoW Forever">Forever</span> (<a href="https://www.zockify.com/forever/priest/leveling/" target="_blank" rel="noopener noreferrer">Zockify</a>)</li>
+<li>Щит → Взрыв разума издалека → Слово Тьмы: Боль → Слово Тьмы: Смерть по откату (на добивание) → Взрыв разума по откату → Пытка разума в промежутках. Против толстых — обновить Боль и Щит. <span class="b b-ok" title="Подтверждено для WoW Forever">Forever</span> (<a href="https://www.method.gg/wow-forever/wow-forever-priest-leveling-guide-and-talents" target="_blank" rel="noopener noreferrer">Method</a>)</li>
+<li>Silence (Молчание) — сбивать опасные касты; Vampiric Embrace (Объятия вампира) против сильных противников — лечит вас вдвое сильнее, чем группу. <span class="b b-ok" title="Подтверждено для WoW Forever">Forever</span> (<a href="https://www.zockify.com/forever/priest/leveling/" target="_blank" rel="noopener noreferrer">Zockify</a>, <a href="https://foreverchanges.pro/patch-notes#class-priest" target="_blank" rel="noopener noreferrer">ForeverChanges, 16.11</a>)</li>
+<li>Мало здоровья — выйти из облика, подлечиться, войти снова. <span class="b b-ok" title="Подтверждено для WoW Forever">Forever</span> (<a href="https://www.zockify.com/forever/priest/leveling/" target="_blank" rel="noopener noreferrer">Zockify</a>)</li>
+<li>Несколько мобов: Боль на каждого; с Devouring Contagion (Всепожирающее заражение) Чума при смерти цели перескакивает на двух соседей в радиусе 10 м. <span class="b b-ok" title="Подтверждено для WoW Forever">Forever</span> (<a href="https://www.sportskeeda.com/mmo/wow-forever-priest-leveling-guide-best-spec-talents-rotation" target="_blank" rel="noopener noreferrer">Sportskeeda</a>, <a href="https://foreverchanges.pro/talents/priest" target="_blank" rel="noopener noreferrer">ForeverChanges</a>)</li>
+<li>Жезл после 40 — для добивания и экономии маны; выбирать по духу, интеллекту и урону тьмой, а не только по DPS. <span class="b b-ok" title="Подтверждено для WoW Forever">Forever</span> (<a href="https://www.sportskeeda.com/mmo/wow-forever-priest-leveling-guide-best-spec-talents-rotation" target="_blank" rel="noopener noreferrer">Sportskeeda</a>, <a href="https://www.zockify.com/forever/priest/leveling/" target="_blank" rel="noopener noreferrer">Zockify</a>)</li>
+</ol>
+<h3 id="лечение-в-подземельях">Лечение в подземельях</h3>
+<ul>
+<li>Перед лечением выйти из облика Тьмы. Спасать — Щитом или Быстрым исцелением; основное лечение — пониженный ранг Heal (Исцеление) или Greater Heal (Великое исцеление), который лечит 25–30% здоровья танка (максимальные ранги уходят в перелечение); Renew (Обновление) на танке при постоянном уроне, не обновлять раньше времени; Dispel Magic (Рассеивание заклинаний) по нужным дебафам; когда группа стабильна — жезл. <span class="b b-ok" title="Подтверждено для WoW Forever">Forever</span> (<a href="https://www.zockify.com/forever/priest/leveling/" target="_blank" rel="noopener noreferrer">Zockify</a>)</li>
+<li>Человеку: Divine Grace (Божественное покровительство) — мгновенно поднять танка ниже 50% и сразу повесить второй Щит (снимает Ослабленную душу). <span class="b b-ok" title="Подтверждено для WoW Forever">Forever</span> (<a href="https://news.blizzard.com/en-us/article/24301514/world-of-warcraft-forever-class-deep-dives-priest-and-warrior" target="_blank" rel="noopener noreferrer">Blizzard</a>)</li>
+<li>Fade (Уход в тень) сбрасывает угрозу в два раза сильнее, чем в Classic — первая кнопка, если моб пошёл на жреца. <span class="b b-ok" title="Подтверждено для WoW Forever">Forever</span> (<a href="https://news.blizzard.com/en-us/article/24301514/world-of-warcraft-forever-class-deep-dives-priest-and-warrior" target="_blank" rel="noopener noreferrer">Blizzard</a>)</li>
+</ul></article><nav class="pager"><a class="prev" href="priest-06.html">← Классовые задания жреца Альянса</a><a class="next" href="priest-08.html">Экипировка и характеристики →</a></nav>
+</main>
+</div>
+<script src="search-index.js" defer></script>
+<script src="app.js" defer></script>
+</body>
+</html>

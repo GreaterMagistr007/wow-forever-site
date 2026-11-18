@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Макросы для жреца — Жрец на прокачке — WoW Forever</title>
+<meta name="description" content="Оффлайн-база знаний и гайды по WoW Forever: прокачка, профессии, золото, аддоны, игра под Linux.">
+<meta name="theme-color" content="#16120c">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="index.html">WoW Forever</a>
+  <button class="menu" type="button" aria-expanded="false" aria-controls="nav">Меню</button>
+  <div class="search">
+    <input id="q" type="search" placeholder="Поиск: маунт, травничество, Legacy…" autocomplete="off" aria-label="Поиск по базе знаний и гайдам">
+    <div id="results" role="listbox" hidden></div>
+  </div>
+</header>
+<div class="layout">
+<nav id="nav" aria-label="Разделы"><a href="index.html">Главная</a><div class="nh">Гайды</div><a href="guide-first-hour.html">Первый час: с чего начать</a><a href="guide-leveling-route.html">Маршрут прокачки 1–60</a><a href="guide-first-gold.html">Деньги на прокачке и маунт к 40</a><a href="guide-professions.html">Профессии: от выбора до 300</a><a href="guide-auctionator.html">Торговля на аукционе с Auctionator</a><a href="guide-level-60.html">Что делать на 60</a><div class="nh">База знаний</div><a href="start.html">С чего начать</a><a href="leveling.html">Прокачка 1–60</a><a href="routes.html">Маршруты прокачки</a><a href="professions.html">Профессии</a><a href="gold.html">Золото и аукцион</a><a href="travel.html">Передвижение и маунты</a><a href="dungeons.html">Подземелья, рейды и группы</a><a href="addons.html">Аддоны</a><a href="linux.html">WoW под Linux</a><a href="payment.html">Подписка и оплата</a><a href="alliance-route.html">Маршрут Альянса 20–60 по зонам</a><a href="dungeon-quests.html">Задания подземелий 18–60 для Альянса</a><a href="gold-for-leveling.html">Золото и профессии под быструю прокачку</a><a href="priest.html" class="on" aria-current="page">Жрец на прокачке</a><a href="leveling-hacks.html">Лайфхаки скорости прокачки и изменения после запуска</a><a href="priest-spells.html">Навыки жреца по уровням</a></nav>
+<main>
+<p class="crumbs"><a href="index.html">Главная</a> › <a href="priest.html">Жрец на прокачке</a></p><h1>Макросы для жреца</h1><article><p>В русском клиенте в макросах пишутся русские названия заклинаний (как в книге заклинаний); английские варианты — для английского клиента. Синтаксис с условиями (<code>[@mouseover]</code>, <code>[@player]</code>, <code>[nochanneling]</code>) в Forever работает: клиент построен на современном. Общие макросы — в разделе «Макросы» статьи «С чего начать». <span class="b b-ok" title="Подтверждено для WoW Forever">Forever</span> (<a href="https://wow-forever.gg/guides/setup/macros/" target="_blank" rel="noopener noreferrer">wow-forever.gg</a>)
+- Жезл без выключения повторным нажатием (стреляет, пока не применено другое заклинание или не нажат Esc):
+  <code>#showtooltip
+  /cast !Выстрел</code>
+  <span class="b b-ok" title="Подтверждено для WoW Forever">Forever</span> (<a href="https://www.sportskeeda.com/mmo/wow-forever-priest-leveling-guide-best-spec-talents-rotation" target="_blank" rel="noopener noreferrer">Sportskeeda</a>; у них <code>/use !Shoot</code>; русское имя — <a href="https://nether.wowhead.com/forever/tooltip/spell/5019?locale=7" target="_blank" rel="noopener noreferrer">Wowhead</a>)
+- Не сбивать Пытку разума, если нажать кнопку во время канала (вместо второй «Пытки» можно поставить «Взрыв разума»):
+  <code>#showtooltip
+  /cast [nochanneling:Пытка разума] Пытка разума</code>
+  <span class="b b-ok" title="Подтверждено для WoW Forever">Forever</span> (<a href="https://www.sportskeeda.com/mmo/wow-forever-priest-leveling-guide-best-spec-talents-rotation" target="_blank" rel="noopener noreferrer">Sportskeeda</a>)
+- Лечение или щит по тому, кто под курсором, иначе по цели — для подземелий с рамками HealBot не обязателен (HealBot сам лечит по клику):
+  <code>#showtooltip
+  /cast [@mouseover,help,nodead][] Быстрое исцеление</code>
+  <span class="b b-ok" title="Подтверждено для WoW Forever">Forever</span> (<a href="https://wow-forever.gg/guides/setup/macros/" target="_blank" rel="noopener noreferrer">wow-forever.gg</a>, <a href="https://rankedboost.com/world-of-warcraft/forever/macros/" target="_blank" rel="noopener noreferrer">RankedBoost</a>)
+- Щит на себя, не сбрасывая цель:
+  <code>#showtooltip
+  /cast [@player] Слово силы: Щит</code>
+  <span class="b b-warn" title="Из гайдов по Classic, для Forever не подтверждено">Classic</span> <span class="b b-mute" title="Источник не указан">без источника</span>
+- Выйти из облика Тьмы и сразу подлечиться (второе нажатие — каст):
+  <code>#showtooltip Быстрое исцеление
+  /cancelform
+  /cast [@player] Быстрое исцеление</code>
+  В Classic Облик Тьмы снимается <code>/cancelform</code>; в Forever не проверено. <span class="b b-warn" title="Из гайдов по Classic, для Forever не подтверждено">Classic</span> <span class="b b-mute" title="Источник не указан">без источника</span>
+- Divine Grace (Божественное покровительство) по танку под курсором — то же, что с Быстрым исцелением, с заменой названия. Учесть, что русское название совпадает с талантом Divine Aegis — в макросе работает то заклинание, которое есть в книге. <span class="b b-mute" title="Источник не указан">без источника</span>
+- Один макрос — одно действие на нажатие; «ротация одной кнопкой» через сторонние программы запрещена. <span class="b b-mute" title="Источник не указан">без источника</span></p></article><nav class="pager"><a class="prev" href="priest-08.html">← Экипировка и характеристики</a><a class="next" href="priest-10.html">Аддоны для жреца →</a></nav>
+</main>
+</div>
+<script src="search-index.js" defer></script>
+<script src="app.js" defer></script>
+</body>
+</html>

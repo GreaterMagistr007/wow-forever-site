@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Снайпинг — Стратегии заработка на аукционе — WoW Forever</title>
+<meta name="description" content="Оффлайн-база знаний и гайды по WoW Forever: прокачка, профессии, золото, аддоны, игра под Linux.">
+<meta name="theme-color" content="#16120c">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="index.html">WoW Forever</a>
+  <button class="menu" type="button" aria-expanded="false" aria-controls="nav">Меню</button>
+  <div class="search">
+    <input id="q" type="search" placeholder="Поиск: маунт, травничество, Legacy…" autocomplete="off" aria-label="Поиск по базе знаний и гайдам">
+    <div id="results" role="listbox" hidden></div>
+  </div>
+</header>
+<div class="layout">
+<nav id="nav" aria-label="Разделы"><a href="index.html">Главная</a><div class="nh">Гайды</div><a href="guide-first-hour.html">Первый час: с чего начать</a><a href="guide-leveling-route.html">Маршрут прокачки 1–60</a><a href="guide-first-gold.html">Деньги на прокачке и маунт к 40</a><a href="guide-professions.html">Профессии: от выбора до 300</a><a href="guide-auctionator.html">Торговля на аукционе с Auctionator</a><a href="guide-level-60.html">Что делать на 60</a><a href="guide-fastest-route-hyjal.html">Самый быстрый маршрут 19–60 (жрец-человек, Альянс, PvP) — запасной: с Горой Хиджал</a><a href="guide-fastest-route.html">Самый быстрый маршрут 19–60 (жрец-человек, Альянс, PvP)</a><div class="nh">База знаний</div><a href="start.html">С чего начать</a><a href="leveling.html">Прокачка 1–60</a><a href="routes.html">Маршруты прокачки</a><a href="professions.html">Профессии</a><a href="gold.html">Золото и аукцион</a><a href="travel.html">Передвижение и маунты</a><a href="dungeons.html">Подземелья, рейды и группы</a><a href="addons.html">Аддоны</a><a href="linux.html">WoW под Linux</a><a href="payment.html">Подписка и оплата</a><a href="alliance-route.html">Маршрут Альянса 20–60 по зонам</a><a href="dungeon-quests.html">Задания подземелий 18–60 для Альянса</a><a href="gold-for-leveling.html">Золото и профессии под быструю прокачку</a><a href="priest.html">Жрец на прокачке</a><a href="leveling-hacks.html">Лайфхаки скорости прокачки и изменения после запуска</a><a href="priest-spells.html">Навыки жреца по уровням</a><a href="quests.html">Справочник заданий</a><a href="enchanting.html">Наложение чар (Enchanting) на прокачке</a><a href="ah-strategies.html" class="on" aria-current="page">Стратегии заработка на аукционе</a></nav>
+<main>
+<p class="crumbs"><a href="index.html">Главная</a> › <a href="ah-strategies.html">Стратегии заработка на аукционе</a></p><h1>Снайпинг</h1><article><p><strong>Суть.</strong> Ловить свежевыставленные лоты с ценой сильно ниже рынка (ошибка в цене, цена за стак вместо цены за штуку, распродажа) в первые секунды–минуты.</p>
+<p><strong>Что нужно.</strong> Аддон со списком товаров и порогами цен, капитал, постоянное присутствие у аукциона.</p>
+<p><strong>Как делать.</strong>
+- В Retail после 8.3 снайпер TSM работает только повторным поиском по списку (листание последней страницы с новыми лотами было только в старом классическом окне аукциона). Окно аукциона в Forever — ретейловое (см. <code>kb/05-gold.md</code>, «Устройство рынков»), значит, и здесь только повторный поиск. [Retail] (<a href="https://support.tradeskillmaster.com/tsm-addon-documentation/tsm-addon-sniper-operations" target="_blank" rel="noopener noreferrer">support.tradeskillmaster.com</a>)
+- Auctionator предупреждает о лоте с подозрительно низкой ценой — это и есть простейший снайпинг руками. [Retail] (<a href="https://us.forums.blizzard.com/en/wow/t/undercutting-trade-goods/1931161" target="_blank" rel="noopener noreferrer">us.forums.blizzard.com</a>)
+- Retail, региональные commodities (август 2024): часть «снайперов» — боты, которые мгновенно выкупают дешёвые лоты и перевыставляют дороже; игроки просят ограничить частоту сканов. [Retail] (<a href="https://us.forums.blizzard.com/en/wow/t/undercutting-trade-goods/1931161" target="_blank" rel="noopener noreferrer">us.forums.blizzard.com</a>)
+- В Retail есть внешние снайперы по API Blizzard (Azeroth Auction Assassin) — они уведомляют, а покупать всё равно руками. [Retail] (<a href="https://shadowlands.wowhead.com/news/azeroth-auction-assassin-new-ah-sniper-tool-wowhead-economy-weekly-wrap-up-314-337662?page=3" target="_blank" rel="noopener noreferrer">wowhead.com</a>)
+  - Аукционы Forever в API Blizzard тоже есть, но снимок публикуется раз в час (около 20 минут после начала часа), поэтому внешний снайпер видит лот с опозданием до часа — провалы к этому времени обычно уже выкуплены. <span class="b b-ok" title="Подтверждено для WoW Forever">Forever</span> (<a href="https://github.com/lordhubson-dotcom/forever-ah-tracker" target="_blank" rel="noopener noreferrer">github.com</a>)</p>
+<p><strong>Ограничения Forever.</strong> Полный скан — раз в 15 минут, поиск — не больше 100 запросов в минуту, покупка, выставление и отмена — по одному клику на действие (данные беты). <span class="b b-ok" title="Подтверждено для WoW Forever">Forever</span> (<a href="https://hearthproof.com/economy/auction-house/" target="_blank" rel="noopener noreferrer">hearthproof.com</a>)</p>
+<p><strong>Сколько дают.</strong> Отдельных цифр по Forever нет; по нашей истории цен провалы выкупаются быстрее часового снимка, перепродажа провалов — единицы–десятки золотых в сутки. <span class="b b-ok" title="Подтверждено для WoW Forever">Forever</span> (разбор <code>state/agents/ah-skeptic-goldplan.md</code>, раздел 2; локальный файл, на сайте его нет)</p>
+<p><strong>Риски.</strong> Автоматическая покупка (боты, макросы, обходящие клик) — нарушение правил и бан; часть «дешёвых» лотов — приманки на падающем рынке. <span class="b b-mute" title="Источник не указан">без источника</span></p>
+<p><strong>Применимость к Forever.</strong> Руками и аддоном со списком — да; по доходности то же, что перепродажа.</p></article><nav class="pager"><a class="prev" href="ah-strategies-03.html">← Перепродажа (флиппинг)</a><a class="next" href="ah-strategies-05.html">Захват рынка (ресет): выкуп стены и перевыставление →</a></nav>
+</main>
+</div>
+<script src="search-index.js" defer></script>
+<script src="app.js" defer></script>
+</body>
+</html>

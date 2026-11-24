@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Макросы в WoW Forever — WoW Forever</title>
+<meta name="description" content="Оффлайн-база знаний и гайды по WoW Forever: прокачка, профессии, золото, аддоны, игра под Linux.">
+<meta name="theme-color" content="#16120c">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="index.html">WoW Forever</a>
+  <button class="menu" type="button" aria-expanded="false" aria-controls="nav">Меню</button>
+  <div class="search">
+    <input id="q" type="search" placeholder="Поиск: маунт, травничество, Legacy…" autocomplete="off" aria-label="Поиск по базе знаний и гайдам">
+    <div id="results" role="listbox" hidden></div>
+  </div>
+</header>
+<div class="layout">
+<nav id="nav" aria-label="Разделы"><a href="index.html">Главная</a><div class="nh">Гайды</div><a href="guide-first-hour.html">Первый час: с чего начать</a><a href="guide-leveling-route.html">Маршрут прокачки 1–60</a><a href="guide-first-gold.html">Деньги на прокачке и маунт к 40</a><a href="guide-professions.html">Профессии: от выбора до 300</a><a href="guide-auctionator.html">Торговля на аукционе с Auctionator</a><a href="guide-level-60.html">Что делать на 60</a><a href="guide-fastest-route-hyjal.html">Самый быстрый маршрут 19–60 (жрец-человек, Альянс, PvP) — запасной: с Горой Хиджал</a><a href="guide-fastest-route.html">Самый быстрый маршрут 19–60 (жрец-человек, Альянс, PvP)</a><a href="guide-macros.html" class="on" aria-current="page">Макросы в WoW Forever</a><div class="nh">База знаний</div><a href="start.html">С чего начать</a><a href="leveling.html">Прокачка 1–60</a><a href="routes.html">Маршруты прокачки</a><a href="professions.html">Профессии</a><a href="gold.html">Золото и аукцион</a><a href="travel.html">Передвижение и маунты</a><a href="dungeons.html">Подземелья, рейды и группы</a><a href="addons.html">Аддоны</a><a href="linux.html">WoW под Linux</a><a href="payment.html">Подписка и оплата</a><a href="alliance-route.html">Маршрут Альянса 20–60 по зонам</a><a href="dungeon-quests.html">Задания подземелий 18–60 для Альянса</a><a href="gold-for-leveling.html">Золото и профессии под быструю прокачку</a><a href="priest.html">Жрец на прокачке</a><a href="leveling-hacks.html">Лайфхаки скорости прокачки и изменения после запуска</a><a href="priest-spells.html">Навыки жреца по уровням</a><a href="quests.html">Справочник заданий</a><a href="enchanting.html">Наложение чар (Enchanting) на прокачке</a><a href="ah-strategies.html">Стратегии заработка на аукционе</a></nav>
+<main>
+<p class="crumbs"><a href="index.html">Главная</a> › Гайды</p><h1>Макросы в WoW Forever</h1><p class="lead">Как писать макросы под клиент Forever: что проверено в игре, чего макрос не умеет в принципе и готовые макросы для жреца и не только. Проверки — по журналу боя аддона на клиенте 1.60.1, 20–24.11.2026.</p><details class="toc" open><summary>На странице</summary><ol><li><a href="#шаг-1-создай-макрос">Шаг 1. Создай макрос</a></li><li><a href="#шаг-2-запомни-чего-макрос-не-умеет">Шаг 2. Запомни, чего макрос не умеет</a></li><li><a href="#шаг-3-что-проверено-в-игре">Шаг 3. Что проверено в игре</a></li><li><a href="#шаг-4-синтаксис-команды-и-условия">Шаг 4. Синтаксис: команды и условия</a></li><li><a href="#шаг-5-ротация-жреца-тьмы-одной-кнопкой-приближённо">Шаг 5. Ротация жреца Тьмы одной кнопкой (приближённо)</a></li><li><a href="#шаг-6-ротация-с-выбором-по-модификатору-надёжно">Шаг 6. Ротация с выбором по модификатору (надёжно)</a></li><li><a href="#шаг-7-другие-полезные-макросы">Шаг 7. Другие полезные макросы</a></li><li><a href="#шаг-8-как-проверить-свой-макрос">Шаг 8. Как проверить свой макрос</a></li></ol></details><article class="guide"><h2 id="шаг-1-создай-макрос">Шаг 1. Создай макрос</h2>
+<ol>
+<li>Окно макросов — <code>/macro</code> (или <code>/m</code>) в чате либо Esc → «Макросы». Вкладки: общие (для всех персонажей аккаунта) и персонажа. Классовые макросы держи во вкладке персонажа. <span class="b b-ok" title="Подтверждено для WoW Forever">Forever</span> (<a href="https://wow4ever.quest/en/articles/macros-wow-forever" target="_blank" rel="noopener noreferrer">wow4ever</a>, <a href="https://rankedboost.com/world-of-warcraft/forever/macros/" target="_blank" rel="noopener noreferrer">RankedBoost</a>)</li>
+<li>«Создать» → имя → значок (знак вопроса = значок подберёт <code>#showtooltip</code>) → текст → перетащить макрос на панель.</li>
+<li>Предел — 255 символов, а не байт: русский макрос на 218 символов (326 байт) сохраняется целиком. <span class="b b-ok" title="Подтверждено для WoW Forever">Forever</span></li>
+<li>Названия заклинаний — как в книге заклинаний твоего клиента: в русском клиенте только русские. Чтобы не ошибиться, Shift+клик по заклинанию в книге вставляет название в макрос. Опечатка в названии — значок «?» и макрос молчит. <span class="b b-ok" title="Подтверждено для WoW Forever">Forever</span> (<a href="https://wow4ever.quest/en/articles/macros-wow-forever" target="_blank" rel="noopener noreferrer">wow4ever</a>)</li>
+<li>Если макрос меняет заклинание по Shift/Ctrl/Alt, у клавиши с этим модификатором не должно быть своей привязки в «Назначении клавиш» — привязка перехватит нажатие. <span class="b b-warn" title="Из гайдов по Classic, для Forever не подтверждено">Classic</span> (<a href="https://rankedboost.com/world-of-warcraft/forever/macros/" target="_blank" rel="noopener noreferrer">RankedBoost</a>)</li>
+</ol>
+<h2 id="шаг-2-запомни-чего-макрос-не-умеет">Шаг 2. Запомни, чего макрос не умеет</h2>
+<p>Макрос не видит состояние боя. В условиях <code>[...]</code> нет проверок:</p>
+<ul>
+<li>готово ли заклинание (перезарядка);</li>
+<li>висит ли бафф или дебафф на цели или на тебе;</li>
+<li>сколько маны и здоровья у тебя или у цели.</li>
+</ul>
+<p>Blizzard убрала такие проверки намеренно: «умный» выбор заклинания доступен только интерфейсу самой игры, аддоны тоже не могут кастовать за тебя. Поэтому задача «Взрыв разума, когда готов; Боль, если её нет на цели; иначе Пытка разума» одним макросом не решается — только приближённо (шаг 5) или с выбором по модификатору (шаг 6). <code>[mod]</code> проверяет зажатую клавишу Shift/Ctrl/Alt, а не дебафф. <span class="b b-ok" title="Подтверждено для WoW Forever">Forever</span> (<a href="https://wow4ever.quest/en/articles/macros-wow-forever" target="_blank" rel="noopener noreferrer">wow4ever</a>: «the macros in this guide don't read anything from combat»)</p>
+<p>Сторонние программы, которые жмут кнопки за тебя или «крутят ротацию», запрещены правилами — риск бана. Один макрос — одно действие на одно нажатие. <span class="b b-mute" title="Источник не указан">без источника</span></p>
+<h2 id="шаг-3-что-проверено-в-игре">Шаг 3. Что проверено в игре</h2>
+<p>Всё ниже — по журналу боя аддона, 20.11 и 24.11.2026. <span class="b b-ok" title="Подтверждено для WoW Forever">Forever</span></p>
+<ol>
+<li><code>/castsequence</code> работает. Шаг засчитывается только при успешном касте: сорвался (перезарядка, дальность, движение) — последовательность стоит на месте, следующее нажатие пробует тот же шаг.</li>
+<li><code>reset=target</code> работает: смена цели (и потеря цели) возвращает последовательность в начало.</li>
+<li><code>reset=N</code> (секунды) для отслеживания перезарядки бесполезен. Таймер считается от последнего нажатия, дошедшего до строки (в том числе на шаге <code>null</code>), а не от каста. Жмёшь чаще, чем раз в N секунд, — сброс не наступает никогда. <code>/castsequence reset=9 Взрыв разума, null</code> дал Взрыв один раз за бой: после него 13 с шли только Пытки.</li>
+<li>«Первое доступное» строками не работает: в макросе <code>/cast Взрыв разума</code> и следующей строкой <code>/cast Пытка разума</code>, если Взрыв сорвался на перезарядке, Пытка в этом нажатии даже не пробуется. За одно нажатие проходит одно заклинание с глобальной перезарядкой, а сорвавшаяся строка блокирует строки ниже.</li>
+<li>Шаг <code>null</code> работает: <code>/castsequence reset=target Слово Тьмы: Боль, null</code> кастует Боль один раз на цель, дальше строка пустая и пропускает нажатие к строкам ниже. Пока строка стоит на <code>null</code>, значок <code>#showtooltip</code> может быть «?».</li>
+<li><code>/stopmacro [channeling]</code> гасит нажатия во время канала (Пытка разума не сбивается). Одна дыра: в первые 10–30 мс после начала канала клиент ещё не отметил канал, повторное нажатие проходит дальше и может сорвать старт. Жми ритмично 2–3 раза в секунду, не зажимай клавишу.</li>
+<li>Любая попытка каста, даже неудачная, выключает стрельбу жезлом. <code>/cast !Выстрел</code> в том же макросе тут же включает её снова, и жезл «то стреляет, то опускает руки». Жезл в макросе с заклинаниями — только по модификатору или отдельной кнопкой.</li>
+<li>Mouseover работает: <code>[@mouseover,help,nodead][]</code> — тот, кто под курсором, иначе текущая цель. <span class="b b-ok" title="Подтверждено для WoW Forever">Forever</span> (<a href="https://wow-forever.gg/guides/setup/macros/" target="_blank" rel="noopener noreferrer">wow-forever.gg</a>, <a href="https://rankedboost.com/world-of-warcraft/forever/macros/" target="_blank" rel="noopener noreferrer">RankedBoost</a>)</li>
+</ol>
+<h2 id="шаг-4-синтаксис-команды-и-условия">Шаг 4. Синтаксис: команды и условия</h2>
+<p>Синтаксис — как в Classic Era. Гайды по Forever его приводят, но поштучно в игре проверено только то, что в шаге 3. <span class="b b-warn" title="Из гайдов по Classic, для Forever не подтверждено">Classic</span> (<a href="https://wow4ever.quest/en/articles/macros-wow-forever" target="_blank" rel="noopener noreferrer">wow4ever</a>, <a href="https://rankedboost.com/world-of-warcraft/forever/macros/" target="_blank" rel="noopener noreferrer">RankedBoost</a>)</p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Что</th>
+<th>Как пишется</th>
+<th>Для чего</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Значок по заклинанию</td>
+<td><code>#showtooltip</code> или <code>#showtooltip Название</code></td>
+<td>Значок и подсказка того, что макрос скастует</td>
+</tr>
+<tr>
+<td>Каст</td>
+<td><code>/cast Название</code></td>
+<td>Предмет — <code>/use Название</code> или <code>/use 13</code> (слот аксессуара)</td>
+</tr>
+<tr>
+<td>Последовательность</td>
+<td><code>/castsequence reset=target А, Б, В</code></td>
+<td>Шаг за шагом по нажатию, сброс — <code>reset=target</code>, <code>combat</code>, <code>shift</code>/<code>ctrl</code>/<code>alt</code></td>
+</tr>
+<tr>
+<td>Не выключать</td>
+<td><code>/cast !Выстрел</code></td>
+<td>Повторное нажатие не выключает жезл или автоатаку</td>
+</tr>
+<tr>
+<td>Остановить макрос</td>
+<td><code>/stopmacro [channeling]</code></td>
+<td>Строки ниже не выполняются при условии</td>
+</tr>
+<tr>
+<td>Прервать свой каст</td>
+<td><code>/stopcasting</code></td>
+<td>Первой строкой перед срочным заклинанием</td>
+</tr>
+<tr>
+<td>Автоатака</td>
+<td><code>/startattack</code></td>
+<td>Вместе с умением ближнего боя</td>
+</tr>
+<tr>
+<td>Цель</td>
+<td><code>/targetexact Имя</code>, <code>/cleartarget</code>, <code>/focus</code></td>
+<td>Поиск по точному имени, сброс цели, фокус</td>
+</tr>
+<tr>
+<td>Выйти из облика</td>
+<td><code>/cancelform</code></td>
+<td>Облик Тьмы, облики друида</td>
+</tr>
+</tbody>
+</table></div>
+<p>Условия — в квадратных скобках перед заклинанием:</p>
+<ul>
+<li><code>[@mouseover]</code>, <code>[@player]</code>, <code>[@focus]</code>, <code>[@targettarget]</code>, <code>[@cursor]</code> — на кого кастовать;</li>
+<li><code>[help]</code>, <code>[harm]</code>, <code>[dead]</code>, <code>[nodead]</code>, <code>[exists]</code> — свойства цели;</li>
+<li><code>[mod]</code>, <code>[mod:shift]</code>, <code>[mod:ctrl]</code>, <code>[mod:alt]</code>, <code>[nomod]</code> — зажатый модификатор;</li>
+<li><code>[channeling]</code>, <code>[nochanneling:Пытка разума]</code> — идёт ли канал (любой или указанный);</li>
+<li><code>[combat]</code>, <code>[stealth]</code>, <code>[stance:N]</code>, <code>[form:N]</code>, <code>[mounted]</code> — твоё состояние.</li>
+</ul>
+<p>Правила записи:</p>
+<ul>
+<li>запятая внутри скобок — «и»: <code>[@mouseover,harm,nodead]</code>;</li>
+<li>несколько скобок подряд — «или», проверяются слева направо: <code>[@mouseover,help,nodead][]</code>;</li>
+<li>пустые <code>[]</code> — «текущая цель, без условий»;</li>
+<li><code>;</code> разделяет варианты: <code>/cast [mod:shift] А; [mod:ctrl] Б; В</code> — одна строка, одно заклинание на нажатие, ничего не блокирует.</li>
+</ul>
+<h2 id="шаг-5-ротация-жреца-тьмы-одной-кнопкой-приближённо">Шаг 5. Ротация жреца Тьмы одной кнопкой (приближённо)</h2>
+<p>Взрыв разума (Mind Blast) — перезарядка 8 с, Слово Тьмы: Боль (Shadow Word: Pain) — 24 с с талантом Улучшенное слово Тьмы: Боль, Пытка разума (Mind Flay) — канал 3 с.</p>
+<pre><code>#showtooltip
+/stopmacro [channeling]
+/castsequence reset=target Слово Тьмы: Боль, null
+/castsequence Взрыв разума, Пытка разума, Пытка разума, Пытка разума
+</code></pre>
+<ul>
+<li>Боль — один раз на каждую новую цель.</li>
+<li>Взрыв — после трёх Пыток: 3 × 3 с = 9 с, перезарядка 8 с к этому моменту прошла. Таймеров нет, поэтому частые нажатия ничего не сбивают; от цели Взрыв не зависит.</li>
+<li>Пытку в ближнем бою укорачивают удары (2,2–2,35 с вместо 3). Тогда Взрыв приходит раньше конца перезарядки, и кнопка до 1–1,5 с ничего не делает. Слово силы: Щит (Power Word: Shield) до подхода моба сохраняет канал полным.</li>
+<li>Ограничения, которые макросом не обойти: вернулся на цель, где Боль уже висит, — повесит ещё раз; бой длиннее 24 с — Боль сама не обновится; Взрыв идёт примерно раз в 10,5 с, а не каждые 8.</li>
+</ul>
+<p>Это приближение: в игре оно работало не во всех боях так, как задумано. Если нужен точный приоритет — шаг 6.</p>
+<h2 id="шаг-6-ротация-с-выбором-по-модификатору-надёжно">Шаг 6. Ротация с выбором по модификатору (надёжно)</h2>
+<p>Решаешь ты, глядя на значки: перезарядку Взрыва видно на панели, Боль — на рамке цели и полоске здоровья моба.</p>
+<pre><code>#showtooltip
+/stopmacro [channeling]
+/cast [mod:shift] Слово Тьмы: Боль; [mod:ctrl] Взрыв разума; Пытка разума
+</code></pre>
+<ul>
+<li>Просто нажатие — Пытка разума, Shift — Боль, Ctrl — Взрыв.</li>
+<li>Одна строка <code>/cast</code> с вариантами через <code>;</code>: сорваться и заблокировать соседей нечему.</li>
+<li>Чтобы прервать Пытку ради Взрыва, отпусти кнопку на полсекунды до конца канала — или убери <code>[channeling]</code>, но тогда Пытку будут сбивать и частые нажатия.</li>
+</ul>
+<p>Боль на другого моба без смены цели — отдельная кнопка с mouseover:</p>
+<pre><code>#showtooltip Слово Тьмы: Боль
+/cast [@mouseover,harm,nodead][] Слово Тьмы: Боль
+</code></pre>
+<h2 id="шаг-7-другие-полезные-макросы">Шаг 7. Другие полезные макросы</h2>
+<p>Жезл без выключения повторным нажатием (стреляет, пока не применено другое заклинание или не нажат Esc). <span class="b b-ok" title="Подтверждено для WoW Forever">Forever</span> (<a href="https://www.sportskeeda.com/mmo/wow-forever-priest-leveling-guide-best-spec-talents-rotation" target="_blank" rel="noopener noreferrer">Sportskeeda</a>)</p>
+<pre><code>#showtooltip
+/cast !Выстрел
+</code></pre>
+<p>Пытка разума, которую повторное нажатие не сбивает. <span class="b b-ok" title="Подтверждено для WoW Forever">Forever</span> (<a href="https://www.sportskeeda.com/mmo/wow-forever-priest-leveling-guide-best-spec-talents-rotation" target="_blank" rel="noopener noreferrer">Sportskeeda</a>)</p>
+<pre><code>#showtooltip
+/cast [nochanneling:Пытка разума] Пытка разума
+</code></pre>
+<p>Лечение того, кто под курсором, иначе цели; то же для Обновления (Renew) и Щита. <span class="b b-ok" title="Подтверждено для WoW Forever">Forever</span> (<a href="https://wow-forever.gg/guides/setup/macros/" target="_blank" rel="noopener noreferrer">wow-forever.gg</a>, <a href="https://wow4ever.quest/en/articles/macros-wow-forever" target="_blank" rel="noopener noreferrer">wow4ever</a>)</p>
+<pre><code>#showtooltip
+/cast [@mouseover,help,nodead][] Быстрое исцеление
+</code></pre>
+<p>Щит на себя, не сбрасывая цель. <span class="b b-warn" title="Из гайдов по Classic, для Forever не подтверждено">Classic</span> <span class="b b-mute" title="Источник не указан">без источника</span></p>
+<pre><code>#showtooltip
+/cast [@player] Слово силы: Щит
+</code></pre>
+<p>Найти моба по имени и поставить на него красный крест (метка 7). <code>/cleartarget</code> — чтобы при неудачном поиске крест не получила прежняя цель; проверка <code>~=7</code> — чтобы повторное нажатие не сняло метку. Номера меток: 1 звезда, 2 круг, 3 ромб, 4 треугольник, 5 луна, 6 квадрат, 7 крест, 8 череп. В игре не проверено. <span class="b b-warn" title="Из гайдов по Classic, для Forever не подтверждено">Classic</span> <span class="b b-mute" title="Источник не указан">без источника</span></p>
+<pre><code>/cleartarget
+/targetexact Имя моба
+/run if UnitExists(&quot;target&quot;) and GetRaidTargetIndex(&quot;target&quot;)~=7 then SetRaidTarget(&quot;target&quot;,7) end
+</code></pre>
+<p>Перезагрузка интерфейса одной кнопкой (аддоны сохраняют данные на диск только при ней или при выходе). <span class="b b-ok" title="Подтверждено для WoW Forever">Forever</span></p>
+<pre><code>/reload
+</code></pre>
+<p>Еда и питьё одной кнопкой. <span class="b b-ok" title="Подтверждено для WoW Forever">Forever</span> (<a href="https://rankedboost.com/world-of-warcraft/forever/macros/" target="_blank" rel="noopener noreferrer">RankedBoost</a>)</p>
+<pre><code>/use Название питья
+/use Название еды
+</code></pre>
+<h2 id="шаг-8-как-проверить-свой-макрос">Шаг 8. Как проверить свой макрос</h2>
+<ol>
+<li>Красный текст ошибки над центром экрана подсказывает, какая строка сорвалась: «Заклинание пока недоступно» — перезарядка или глобальная перезарядка, «Выполняется другое действие» — идёт каст, «Невозможно делать это на ходу» — движение.</li>
+<li>Значок «?» у макроса — опечатка в названии или <code>/castsequence</code> стоит на <code>null</code>.</li>
+<li>Надёжнее всего — журнал своих кастов: какое заклинание пробовалось, в какую секунду и почему сорвалось. Подписка аддонов на полный журнал боя (<code>COMBAT_LOG_EVENT_UNFILTERED</code>) в Forever запрещена — клиент блокирует аддон окном «доступно только интерфейсу Blizzard», но события своих кастов (<code>UNIT_SPELLCAST_*</code>) аддону доступны. Мана игрока в бою для аддонов скрыта. <span class="b b-ok" title="Подтверждено для WoW Forever">Forever</span></li>
+<li>После правки макроса — пара боёв, <code>/reload</code>, разбор журнала. Догадки о том, как устроен <code>/castsequence</code>, здесь не раз оказывались неверными.</li>
+</ol>
+<p>Подробнее о жреце — <a href="priest-09.html">База знаний → Жрец на прокачке → Макросы для жреца</a>.</p></article>
+</main>
+</div>
+<script src="search-index.js" defer></script>
+<script src="app.js" defer></script>
+</body>
+</html>
